@@ -103,16 +103,46 @@ app.use(
     },
   })
 );
-
-//setting up proxy for our payment service
+//setting up proxy for our account service
 app.use(
-  "/v1/payment",
+  "/v1/clients/payment",
   validateToken,
-  proxy(process.env.PAYMENT_SERVICE_URL, {
+  proxy(process.env.CLIENT_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["Content-Type"] = "application/json";
-      proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
+
+      // Forward the Bearer token if present
+      const bearerToken = srcReq.headers["authorization"];
+      if (bearerToken) {
+        proxyReqOpts.headers["Authorization"] = bearerToken;
+      }
+
+      return proxyReqOpts;
+    },
+
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Client service: ${proxyRes.statusCode}`
+      );
+      return proxyResData;
+    },
+  })
+);
+//validation
+app.use(
+  "/v1/clients/validation",
+  proxy(process.env.CLIENT_SERVICE_URL, proxyOptions)
+);
+//setting up proxy for our payment service
+app.use(
+  "/v1/agencybanking",
+  //validateToken,
+  proxy(process.env.AGENCY_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+    //  proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
 
       return proxyReqOpts;
     },
@@ -163,11 +193,11 @@ app.listen(PORT, () => {
   logger.info(
     `Account service is running on port ${process.env.ACCOUNT_SERVICE_URL}`
   );
-//   logger.info(
-//     `Media service is running on port ${process.env.MEDIA_SERVICE_URL}`
-//   );
-//   logger.info(
-//     `Search service is running on port ${process.env.SEARCH_SERVICE_URL}`
-//   );
-//   logger.info(`Redis Url ${process.env.REDIS_URL}`);
+  logger.info(
+    `Agency service is running on port ${process.env.AGENCY_SERVICE_URL}`
+  );
+  logger.info(
+    `Client service is running on port ${process.env.CLIENT_SERVICE_URL}`
+  );
+   logger.info(`Redis Url ${process.env.REDIS_URL}`);
 });

@@ -2,12 +2,13 @@ import jwt from "jsonwebtoken";
 import crypto from "crypto";
 //import RefreshToken from "../models/RefreshToken.js";
 
-const generateTokens = async (username,email,token) => {
+const generateTokens = async (username,email,token,id) => {
   const accessToken = jwt.sign(
     {
       email: email,
       username: username,
-      tokenId:token
+      userAuth:token,
+      id:id
     },
     process.env.JWT_SECRET,
     { expiresIn: "60m" }

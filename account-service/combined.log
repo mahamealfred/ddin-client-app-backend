@@ -220,3 +220,20 @@
 {"level":"error","message":"Error while saving in Cyclos:","service":"account-service","timestamp":"2025-05-31T08:50:27.119Z"}
 {"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T08:51:56.070Z"}
 {"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T08:52:04.728Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T08:52:09.813Z"}
+{"level":"info","message":"Received POST request to /api/account/client-topup","service":"account-service","timestamp":"2025-05-31T08:52:22.752Z"}
+{"level":"info","message":"Request body, [object Object]","service":"account-service","timestamp":"2025-05-31T08:52:22.754Z"}
+{"level":"info","message":"Client Momo TopUp endpoint hit...","service":"account-service","timestamp":"2025-05-31T08:52:22.761Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"account-service","timestamp":"2025-05-31T08:52:23.635Z"}
+{"level":"info","message":"Received POST request to /api/account/client-topup","service":"account-service","timestamp":"2025-05-31T08:57:54.565Z"}
+{"level":"info","message":"Request body, [object Object]","service":"account-service","timestamp":"2025-05-31T08:57:54.567Z"}
+{"level":"info","message":"Client Momo TopUp endpoint hit...","service":"account-service","timestamp":"2025-05-31T08:57:54.569Z"}
+{"level":"warn","message":"Successfully TopUp Client Account","service":"account-service","timestamp":"2025-05-31T08:57:55.322Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T09:10:25.643Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T09:10:40.857Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T09:11:18.391Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-05-31T14:25:45.607Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-07-02T11:15:33.191Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-07-02T17:12:26.395Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-07-08T07:30:48.011Z"}
+{"level":"info","message":"Account service running on port 3004","service":"account-service","timestamp":"2025-07-08T13:55:29.723Z"}

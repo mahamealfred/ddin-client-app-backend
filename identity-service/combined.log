@@ -817,3 +817,144 @@
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-31T08:57:21.401Z"}
 {"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-05-31T08:57:21.403Z"}
 {"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-05-31T08:57:22.191Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-05-31T14:25:45.920Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:57:54.991Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:13.620Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:16.914Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:31.591Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:40.776Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:43.555Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:46.814Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:58:54.668Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:59:04.331Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T15:59:05.798Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T16:03:30.199Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-06-22T16:03:32.504Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-06-22T16:04:38.910Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-06-22T16:04:38.911Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-06-22T16:04:39.033Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-06-22T16:04:39.857Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-02T08:05:26.728Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-02T08:09:06.952Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-02T08:09:06.953Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-02T08:09:06.959Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-02T08:09:07.847Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-02T09:56:01.919Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-02T09:56:01.924Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-02T09:56:01.937Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-02T09:56:02.677Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-02T09:56:14.251Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-02T09:56:14.253Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-02T09:56:14.256Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-02T09:56:14.989Z"}
+{"level":"info","message":"Received GET request to /api/auth/find/mahamet","service":"identity-service","timestamp":"2025-07-02T09:56:42.054Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-02T09:56:42.055Z"}
+{"level":"info","message":"FindUser endpoint hit...","service":"identity-service","timestamp":"2025-07-02T09:56:42.058Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-02T09:56:42.693Z"}
+{"level":"info","message":"Received GET request to /api/auth/find/mahamet","service":"identity-service","timestamp":"2025-07-02T09:57:07.044Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-02T09:57:07.045Z"}
+{"level":"info","message":"FindUser endpoint hit...","service":"identity-service","timestamp":"2025-07-02T09:57:07.049Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-02T09:57:07.706Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-02T10:17:44.146Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-03T08:11:29.862Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-03T19:38:19.490Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T07:30:27.498Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T07:30:46.958Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T07:30:46.959Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T07:30:47.205Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T07:30:48.041Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T07:33:32.474Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T07:33:32.475Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T07:33:32.502Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T07:33:33.162Z"}
+{"level":"info","message":"Received GET request to /api/auth/find/AlfredMahame","service":"identity-service","timestamp":"2025-07-17T07:34:18.421Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T07:34:18.423Z"}
+{"level":"info","message":"FindUser endpoint hit...","service":"identity-service","timestamp":"2025-07-17T07:34:18.427Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-17T07:34:19.141Z"}
+{"level":"info","message":"Received GET request to /api/auth/find/mahamet","service":"identity-service","timestamp":"2025-07-17T07:35:59.197Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T07:35:59.198Z"}
+{"level":"info","message":"FindUser endpoint hit...","service":"identity-service","timestamp":"2025-07-17T07:35:59.201Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-17T07:35:59.902Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T10:05:38.587Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T10:05:38.589Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T10:05:38.592Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T10:05:39.282Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:30:58.796Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:01.631Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:06.862Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:11.293Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:12.408Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:15.309Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:16.309Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:22.161Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:32.257Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:34.249Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T10:31:42.396Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T10:31:42.397Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T10:31:42.403Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-17T10:31:43.137Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:31:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:49:9)","timestamp":"2025-07-17T10:31:43.139Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:31:56.832Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T10:31:59.733Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T10:31:59.733Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T10:31:59.738Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T10:32:00.460Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:34.479Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:37.075Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:40.267Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:48.378Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:52.603Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:57.316Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:33:59.329Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:34:48.666Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:34:51.639Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:35:39.822Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:36:01.640Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T10:42:13.526Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T10:42:13.527Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T10:42:13.533Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-17T10:42:14.337Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:30:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:49:9)","timestamp":"2025-07-17T10:42:14.339Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:42:37.751Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T10:42:42.194Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T10:42:42.194Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T10:42:42.202Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-17T10:42:42.904Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:30:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:49:9)","timestamp":"2025-07-17T10:42:42.905Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:45:10.377Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:45:13.778Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:45:26.418Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:45:29.641Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T10:45:31.164Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T10:45:36.823Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T10:45:36.823Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T10:45:36.827Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T10:45:37.513Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T12:13:01.068Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T12:13:01.072Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T12:13:01.075Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T12:13:01.806Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T13:14:45.566Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T13:14:45.570Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T13:14:45.574Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T13:14:46.286Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T16:11:32.374Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T16:11:38.730Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T16:16:05.644Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T16:16:05.645Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T16:16:05.651Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T16:16:06.518Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T17:36:01.640Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T17:36:01.642Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T17:36:01.649Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T17:36:02.418Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-17T18:03:19.881Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-17T18:03:19.882Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-17T18:03:19.885Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-17T18:03:20.487Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-17T18:27:35.297Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-07-18T14:53:15.344Z"}
+{"level":"info","message":"Received GET request to /api/auth/login","service":"identity-service","timestamp":"2025-07-18T14:55:20.337Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-07-18T14:55:20.339Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-07-18T14:55:20.610Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-07-18T14:55:21.436Z"}

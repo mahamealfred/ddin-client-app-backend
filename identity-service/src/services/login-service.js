@@ -14,8 +14,8 @@ const loginService = async (req, res, username, password) => {
                 'Content-Type': 'application/json',
             },
         });
-
-        const { accessToken, refreshToken } = await generateTokens(username, password,token);
+        const id=response.data.id
+        const { accessToken, refreshToken } = await generateTokens(username, password,token,id);
 
 
         logger.warn("Successfully logged");
