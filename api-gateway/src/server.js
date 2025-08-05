@@ -79,9 +79,9 @@ app.use(
 );
 //setting up proxy for our account service
 app.use(
-  "/v1/account",
+  "/v1/accounts",
   validateToken,
-  proxy(process.env.ACCOUNT_SERVICE_URL, {
+  proxy(process.env.IDENTITY_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["Content-Type"] = "application/json";
@@ -148,7 +148,7 @@ app.use(
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from Post service: ${proxyRes.statusCode}`
+        `Response received from Agency service: ${proxyRes.statusCode}`
       );
 
       return proxyResData;
@@ -156,6 +156,32 @@ app.use(
   })
 );
 
+//Test validation
+app.use(
+  "/v1/agencytest/eco/services/execute",
+  validateToken,
+  proxy(process.env.TEST_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+    //  proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
+
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Test service: ${proxyRes.statusCode}`
+      );
+
+      return proxyResData;
+    },
+  })
+  
+);
+app.use(
+  "/v1/agencytest",
+  proxy(process.env.TEST_SERVICE_URL, proxyOptions)
+);
 //setting up proxy for our media service
 app.use(
   "/v1/media",
@@ -198,6 +224,9 @@ app.listen(PORT, () => {
   );
   logger.info(
     `Client service is running on port ${process.env.CLIENT_SERVICE_URL}`
+  );
+    logger.info(
+    `Client service is running on port ${process.env.TEST_SERVICE_URL}`
   );
    logger.info(`Redis Url ${process.env.REDIS_URL}`);
 });

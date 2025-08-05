@@ -580,3 +580,971 @@
 {"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-08T08:28:29.757Z"}
 {"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-08T08:28:35.251Z"}
 {"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-08T13:55:29.587Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:04:16.573Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/getbalance","service":"agency-service","timestamp":"2025-07-25T08:04:22.988Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:04:22.989Z"}
+{"level":"info","message":"Get Account Balance endpoint ","service":"agency-service","timestamp":"2025-07-25T08:04:22.996Z"}
+{"header":{"requestId":"A1753430662996","responsecode":"400","responsemessage":"Authentication failed"},"level":"info","message":"Account balance response received","service":"agency-service","timestamp":"2025-07-25T08:04:25.115Z"}
+{"0":"A","1":"u","10":"t","11":"i","12":"o","13":"n","14":" ","15":"f","16":"a","17":"i","18":"l","19":"e","2":"t","20":"d","3":"h","4":"e","5":"n","6":"t","7":"i","8":"c","9":"a","level":"warn","message":"Failed to retrieve balance","service":"agency-service","timestamp":"2025-07-25T08:04:25.117Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:06:16.826Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:06:36.432Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:07:38.014Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:09:03.516Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:09:36.442Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:09:41.844Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:09:50.793Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:09:58.370Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:10:00.188Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:10:03.748Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:10:05.085Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:17:01.641Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:17:04.821Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:17:13.967Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:17:23.768Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:18:50.792Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:25:53.977Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:27:35.619Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:27:42.555Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:27:44.874Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:27:46.616Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:27:52.355Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:27:53.664Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:28:05.291Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:28:09.168Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:28:13.157Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:28:27.159Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/bill","service":"agency-service","timestamp":"2025-07-25T08:36:29.244Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:36:29.246Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:36:56.298Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:36:56.299Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T08:37:06.989Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:37:16.324Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:37:16.325Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432636328","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:37:18.517Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:37:50.039Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:37:50.041Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432670043","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:37:52.077Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:38:23.429Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:38:23.430Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432703432","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:38:25.473Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:38:30.662Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:38:30.663Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432710666","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:38:32.697Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:38:35.363Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:38:35.364Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432715366","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:38:37.078Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:38:51.504Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:38:51.505Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753432731507","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T08:38:53.144Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:39:20.636Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:39:20.637Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432760640","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:39:22.674Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:40:16.307Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:40:17.698Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T08:40:21.834Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:40:21.835Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753432821839","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T08:40:24.063Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:52:11.946Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:52:24.414Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:52:42.288Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:52:52.298Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:52:54.113Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:52:55.518Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:05.555Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:14.413Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:19.891Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:22.327Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:26.481Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:29.128Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:31.685Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:33.473Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T08:53:44.087Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-biller-details","service":"agency-service","timestamp":"2025-07-25T08:59:50.208Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:59:50.210Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-bill-details","service":"agency-service","timestamp":"2025-07-25T08:59:59.597Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T08:59:59.598Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch biller details","service":"agency-service","timestamp":"2025-07-25T09:00:10.321Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-bill-details","service":"agency-service","timestamp":"2025-07-25T09:00:12.771Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:00:12.772Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch biller details","service":"agency-service","timestamp":"2025-07-25T09:00:23.369Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-bill-details","service":"agency-service","timestamp":"2025-07-25T09:00:25.866Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:00:25.867Z"}
+{"level":"info","message":"Biller details fetched successfully","responseData":{"billFormData":[{"dataType":"String","fieldName":"CUSTOMERID","fieldTitle":"CUSTOMERID","maxFieldLength":16,"serialNo":1,"validateField":"N"},{"dataType":"String","fieldName":"Email","fieldTitle":"Email","maxFieldLength":100,"serialNo":2,"validateField":"N"},{"dataType":"String","fieldName":"LAST4DIGITS","fieldTitle":"LAST4DIGITS","maxFieldLength":50,"serialNo":3,"validateField":"N"}],"billerDetail":{"aggregatorName":"ECOBANK-GTP","billerCategory":"UTILITY","billerCode":"GTP-LOAD","billerDescription":"PREPAID CARD LOADING","billerID":77333,"billerLogo":"/usr/app/Alert/ecobank_banner.jpg","billerName":"PREPAID CARD LOADING","collectionAccountName":"PREPAID CARD LOADING","validationRequired":"Y"},"billerProductInfo":[{"amountType":"V","ccy":"RWF","exchRate":1,"maxAmount":3000000,"minAmount":1,"productCategory":"GTPLOAD","productCode":"GTPLOAD","productDescription":"PREPAID CARD LOADING","productName":"PREPAID CARD LOADING"}],"header":{"requestId":"A1753434025871","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:00:30.697Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-bill-details","service":"agency-service","timestamp":"2025-07-25T09:01:38.777Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:01:38.777Z"}
+{"level":"info","message":"Biller details fetched successfully","responseData":{"billFormData":[{"dataType":"String","fieldName":"CUSTOMERID","fieldTitle":"CUSTOMERID","maxFieldLength":16,"serialNo":1,"validateField":"N"},{"dataType":"String","fieldName":"Email","fieldTitle":"Email","maxFieldLength":100,"serialNo":2,"validateField":"N"},{"dataType":"String","fieldName":"LAST4DIGITS","fieldTitle":"LAST4DIGITS","maxFieldLength":50,"serialNo":3,"validateField":"N"}],"billerDetail":{"aggregatorName":"ECOBANK-GTP","billerCategory":"UTILITY","billerCode":"GTP-LOAD","billerDescription":"PREPAID CARD LOADING","billerID":77333,"billerLogo":"/usr/app/Alert/ecobank_banner.jpg","billerName":"PREPAID CARD LOADING","collectionAccountName":"PREPAID CARD LOADING","validationRequired":"Y"},"billerProductInfo":[{"amountType":"V","ccy":"RWF","exchRate":1,"maxAmount":3000000,"minAmount":1,"productCategory":"GTPLOAD","productCode":"GTPLOAD","productDescription":"PREPAID CARD LOADING","productName":"PREPAID CARD LOADING"}],"header":{"requestId":"A1753434098779","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:01:40.923Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:02:57.081Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:13:00.653Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:13:04.909Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:13:06.790Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:14:30.985Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:14:32.032Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:14:42.374Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:14:47.071Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:14:53.280Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:15:00.400Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:15:02.801Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:15:11.098Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:17:10.645Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:18:25.439Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-25T09:18:46.844Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:18:46.845Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch agent billers","service":"agency-service","timestamp":"2025-07-25T09:18:57.557Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-25T09:18:59.964Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:18:59.966Z"}
+{"level":"info","message":"Fetched agent billers","responseData":{"billercategories":{"Donation":[{"billercode":"KGL","billername":"Kigali Genocide Memorial","category":"Donation","serialNo":1}],"Government":[{"billercode":"RRA","billername":"RWANDA REVENUE AUTHORITY","category":"Government","serialNo":1}],"Investment":[{"billercode":"RNIT","billername":"Rwanda National Investment Trust Ltd","category":"Investment","serialNo":1}],"Schools":[{"billercode":"GHA","billername":"Green Hills Academy","category":"Schools","serialNo":1},{"billercode":"FRANCOPM","billername":"Ecole Francophone Antoine De Saint Exupery Pr","category":"Schools","serialNo":2},{"billercode":"FRANCOSM","billername":"Ecole Francophone Antoine De Saint Exupery Sec","category":"Schools","serialNo":3}],"Travel":[{"billercode":"ETLINE","billername":"Ethiopia Airline","category":"Travel","serialNo":1}],"Utilities":[{"billercode":"ELEC","billername":"Prepaid Electricity","category":"Utilities","serialNo":1},{"billercode":"EUCL_ERW","billername":"EUCL repaid Electricity","category":"Utilities","serialNo":1},{"billercode":"STTV","billername":"Startimes Paytv","category":"Utilities","serialNo":2},{"billercode":"GTP-LOAD","billername":"PREPAID CARD LOADING","category":"Utilities","serialNo":3},{"billercode":"RWANDA_WASAC","billername":"RWANDA WATER WASAC","category":"Utilities","serialNo":4}]},"header":{"requestId":"A1753435139968","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:19:02.043Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:35:53.149Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:00.795Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:01.988Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:03.417Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:20.905Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:27.654Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:28.656Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:32.759Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:34.190Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:38.728Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:40.795Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:36:52.634Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:38:25.432Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:38:25.433Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:38:52.347Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:38:55.683Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:39:01.077Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:39:01.078Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch bill payment fee","service":"agency-service","timestamp":"2025-07-25T09:39:11.707Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:39:13.923Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:39:13.924Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":100,"fee":0,"header":{"requestId":"A1753436353927","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:39:15.700Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:39:36.950Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:39:36.951Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":100,"fee":0,"header":{"requestId":"A1753436376953","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:39:38.581Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:39:56.444Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:39:56.445Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":6000,"fee":0,"header":{"requestId":"A1753436396449","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:39:58.101Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:40:10.148Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:40:10.149Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":6000,"fee":0,"header":{"requestId":"A1753436410151","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:40:11.797Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:40:15.341Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:40:15.342Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":6000,"fee":0,"header":{"requestId":"A1753436415345","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:40:16.645Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T09:41:01.131Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T09:41:01.132Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":600000,"fee":0,"header":{"requestId":"A1753436461134","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T09:41:02.779Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:55:58.021Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:56:35.543Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:56:38.266Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:56:57.953Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:58:27.695Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T09:58:30.594Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:00:04.006Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:00:07.871Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:01:04.299Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:01:05.684Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:01:31.515Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:01:32.523Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:01:48.715Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:01:49.780Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:02.134Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:03.101Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:15.498Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:41.513Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:47.783Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:52.698Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:57.546Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:02:59.798Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:03:02.854Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:03:06.129Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:25:47.770Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:25:47.771Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:25:58.462Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:26:00.843Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:26:00.844Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:26:11.437Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:26:13.616Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:26:13.617Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753439173620","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:26:15.839Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-biller-details","service":"agency-service","timestamp":"2025-07-25T10:26:24.859Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:26:24.859Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-biller-details","service":"agency-service","timestamp":"2025-07-25T10:26:35.609Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:26:35.610Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/get-bill-details","service":"agency-service","timestamp":"2025-07-25T10:26:51.194Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:26:51.195Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/biller-details","service":"agency-service","timestamp":"2025-07-25T10:27:12.219Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:27:12.220Z"}
+{"level":"info","message":"Biller details fetched successfully","responseData":{"billFormData":[{"dataType":"String","fieldName":"CUSTOMERID","fieldTitle":"CUSTOMERID","maxFieldLength":16,"serialNo":1,"validateField":"N"},{"dataType":"String","fieldName":"Email","fieldTitle":"Email","maxFieldLength":100,"serialNo":2,"validateField":"N"},{"dataType":"String","fieldName":"LAST4DIGITS","fieldTitle":"LAST4DIGITS","maxFieldLength":50,"serialNo":3,"validateField":"N"}],"billerDetail":{"aggregatorName":"ECOBANK-GTP","billerCategory":"UTILITY","billerCode":"GTP-LOAD","billerDescription":"PREPAID CARD LOADING","billerID":77333,"billerLogo":"/usr/app/Alert/ecobank_banner.jpg","billerName":"PREPAID CARD LOADING","collectionAccountName":"PREPAID CARD LOADING","validationRequired":"Y"},"billerProductInfo":[{"amountType":"V","ccy":"RWF","exchRate":1,"maxAmount":3000000,"minAmount":1,"productCategory":"GTPLOAD","productCode":"GTPLOAD","productDescription":"PREPAID CARD LOADING","productName":"PREPAID CARD LOADING"}],"header":{"requestId":"A1753439232223","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:27:14.374Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T10:27:22.221Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:27:22.222Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":600000,"fee":0,"header":{"requestId":"A1753439242226","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:27:23.856Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-25T10:27:30.403Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:27:30.403Z"}
+{"level":"info","message":"Fetched agent billers","responseData":{"billercategories":{"Donation":[{"billercode":"KGL","billername":"Kigali Genocide Memorial","category":"Donation","serialNo":1}],"Government":[{"billercode":"RRA","billername":"RWANDA REVENUE AUTHORITY","category":"Government","serialNo":1}],"Investment":[{"billercode":"RNIT","billername":"Rwanda National Investment Trust Ltd","category":"Investment","serialNo":1}],"Schools":[{"billercode":"GHA","billername":"Green Hills Academy","category":"Schools","serialNo":1},{"billercode":"FRANCOPM","billername":"Ecole Francophone Antoine De Saint Exupery Pr","category":"Schools","serialNo":2},{"billercode":"FRANCOSM","billername":"Ecole Francophone Antoine De Saint Exupery Sec","category":"Schools","serialNo":3}],"Travel":[{"billercode":"ETLINE","billername":"Ethiopia Airline","category":"Travel","serialNo":1}],"Utilities":[{"billercode":"ELEC","billername":"Prepaid Electricity","category":"Utilities","serialNo":1},{"billercode":"EUCL_ERW","billername":"EUCL repaid Electricity","category":"Utilities","serialNo":1},{"billercode":"STTV","billername":"Startimes Paytv","category":"Utilities","serialNo":2},{"billercode":"GTP-LOAD","billername":"PREPAID CARD LOADING","category":"Utilities","serialNo":3},{"billercode":"RWANDA_WASAC","billername":"RWANDA WATER WASAC","category":"Utilities","serialNo":4}]},"header":{"requestId":"A1753439250406","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:27:32.344Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:29:38.360Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:29:53.893Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:38:30.934Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:38:30.935Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753439910943","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T10:38:32.808Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:39:17.365Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:39:17.366Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753439957369","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T10:39:19.014Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:40:49.393Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:40:50.579Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:40:56.720Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:40:57.679Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:40:59.270Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:41:02.633Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:41:02.633Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:41:13.281Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:41:15.810Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:41:15.811Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753440075815","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T10:41:17.591Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:41:28.441Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:41:49.643Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:41:49.644Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":1000,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753440109652","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:41:51.960Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/biller-details","service":"agency-service","timestamp":"2025-07-25T10:43:41.045Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:43:41.046Z"}
+{"level":"info","message":"Biller details fetched successfully","responseData":{"billFormData":[{"dataType":"String","fieldName":"meter number","fieldTitle":"meter number","maxFieldLength":100,"serialNo":1}],"billerDetail":{"aggregatorName":"PIVOT","billerCategory":"UTILITY","billerCode":"ELEC","billerDescription":"PREPAID ELECTRICITY","billerEmail":"AIRTEL@GMAIL.COM","billerID":769,"billerLogo":"/usr/app/Alert/ecobank_banner.jpg","billerName":"PREPAID ELECTRICITY","billerPhone":"+233987564","collectionAccountName":"PREPAID ELECTRICITY","validationRequired":"N"},"billerProductInfo":[{"amountType":"V","ccy":"RWF","exchRate":1,"maxAmount":100000,"minAmount":20000,"productCategory":"002","productCode":"ELEC","productDescription":"ELEC","productName":"ELEC"},{"amountType":"V","ccy":"RWF","exchRate":1,"maxAmount":100000,"minAmount":20000,"productCategory":"002","productCode":"ELEC","productDescription":"ELEC","productName":"ELEC"}],"header":{"requestId":"A1753440221050","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:43:43.192Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:46:28.262Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:46:30.130Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:46:40.369Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:46:42.079Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:48:12.975Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:48:12.976Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:48:23.669Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:48:25.929Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:48:25.930Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753440505933","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:48:28.116Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/biller-details","service":"agency-service","timestamp":"2025-07-25T10:49:03.831Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:49:03.832Z"}
+{"level":"info","message":"Biller details fetched successfully","responseData":{"billFormData":[{"dataType":"String","fieldName":"METER_NUMBER","fieldTitle":"METER_NUMBER","maxFieldLength":100,"serialNo":1}],"billerDetail":{"aggregatorName":"EUCL-ERW","billerCategory":"UTILITY","billerCode":"EUCL_ERW","billerDescription":"EUCL_ELECTRICITY","billerID":7762034,"billerName":"EUCL_ELECTRICITY","collectionAccountName":"EUCL_ELECTRICITY","validationRequired":"Y"},"billerProductInfo":[{"amountType":"V","ccy":"RWF","exchRate":1,"maxAmount":1000,"minAmount":0,"productCode":"EUCL_ERW","productDescription":"EUCL-ELECTRICITY","productName":"EUCL-ELECTRICITY"}],"header":{"requestId":"A1753440543834","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:49:05.974Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:50:50.877Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:50:50.879Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753440650881","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T10:50:52.530Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:51:00.281Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:51:00.281Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753440660284","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T10:51:01.922Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:53:15.696Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:53:28.567Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:53:28.568Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753440808571","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:53:30.808Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:53:47.584Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T10:53:50.745Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:53:54.986Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:53:54.987Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:54:05.623Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:54:07.862Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:54:07.863Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:54:18.464Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:54:20.015Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:54:20.016Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-07-25T10:54:30.596Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:54:39.936Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:54:39.937Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753440879939","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:54:42.636Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:56:11.064Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:56:11.065Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753440971067","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:56:13.157Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:56:35.607Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:56:35.608Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753440995611","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:56:37.631Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:56:42.324Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:56:42.325Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753441002327","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:56:44.065Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:57:59.558Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:57:59.558Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753441079561","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:58:01.592Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:58:15.650Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:58:15.650Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753441095652","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T10:58:17.694Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-25T10:58:47.147Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T10:58:47.147Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1753441127149","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-07-25T10:58:48.767Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payament","service":"agency-service","timestamp":"2025-07-25T11:00:23.011Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:00:23.012Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:00:49.694Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:00:49.695Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753441249696","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:00:51.074Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:02:32.560Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:02:32.561Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753441352562","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:02:33.962Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:03:15.350Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:03:17.266Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:03:43.607Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:03:45.541Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:04:12.733Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:04:12.734Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753441452738","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:04:14.276Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:19:24.325Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:19:44.828Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:19:52.518Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:20:40.605Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:20:40.607Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"cbareferenceno":"A1753442440614","externalrefno":"A1753442440614","header":{"requestId":"A1753442440614","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"transactionRefNo":"A1753442440614"},"service":"agency-service","timestamp":"2025-07-25T11:20:48.508Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:20:52.196Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:20:52.197Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"cbareferenceno":"A1753442452200","externalrefno":"A1753442452200","header":{"requestId":"A1753442452200","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"transactionRefNo":"A1753442452200"},"service":"agency-service","timestamp":"2025-07-25T11:20:58.520Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:22:07.405Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:22:07.406Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"cbareferenceno":"A1753442527409","externalrefno":"A1753442527409","header":{"requestId":"A1753442527409","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"transactionRefNo":"A1753442527409"},"service":"agency-service","timestamp":"2025-07-25T11:22:13.971Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:26:04.070Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:28:00.367Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:28:00.367Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:28:11.002Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:28:14.682Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:28:14.687Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:28:25.321Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:28:27.861Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:28:27.862Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"cbareferenceno":"A1753442907867","externalrefno":"A1753442907867","header":{"requestId":"A1753442907867","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"transactionRefNo":"A1753442907867"},"service":"agency-service","timestamp":"2025-07-25T11:28:34.709Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:30:51.359Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:30:57.825Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:30:57.825Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:31:08.474Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:31:17.188Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:31:17.188Z"}
+{"error":"txTokenString is not defined","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:31:23.921Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:32:45.116Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:32:48.275Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:32:50.088Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:32:53.927Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:33:00.145Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:33:00.146Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:33:10.778Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:33:13.025Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:33:13.026Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"cbareferenceno":"A1753443193030","externalrefno":"A1753443193030","header":{"requestId":"A1753443193030","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"transactionRefNo":"A1753443193030"},"service":"agency-service","timestamp":"2025-07-25T11:33:19.871Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:34:53.094Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:35:01.170Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:35:07.295Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:35:07.296Z"}
+{"level":"error","message":"ReferenceError: amountFormatted is not defined\n    at postBillPayment (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/payment-controller.js:84:13)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-25T11:35:07.301Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:35:29.407Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:35:31.810Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:35:31.811Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:35:42.475Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:35:44.506Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:35:44.508Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753443344512","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:35:46.037Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:36:28.666Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:36:32.178Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:36:34.654Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:41:24.155Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:41:25.349Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:41:29.750Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:41:29.750Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:41:40.379Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:41:42.726Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:41:42.728Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:41:53.332Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:41:55.529Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:41:55.530Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753443715533","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:41:57.077Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:45:08.333Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:45:08.334Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753443908352","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:45:09.718Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:45:11.854Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:45:11.856Z"}
+{"level":"info","message":"Posted bill payment successfully","responseData":{"header":{"requestId":"A1753443911858","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T11:45:12.896Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:50:52.663Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:51:18.864Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:51:23.236Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:51:28.511Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:52:31.708Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:52:31.710Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:52:42.374Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:52:44.462Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:52:44.463Z"}
+{"header":{"requestId":"ARKSB3HPXJS6O3V2","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T11:52:45.974Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:52:58.271Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:53:14.919Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:53:24.133Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:53:24.134Z"}
+{"level":"error","message":"ReferenceError: amountFormatted is not defined\n    at postBillPayment (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/payment-controller.js:42:87)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-25T11:53:24.138Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:53:40.266Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:53:45.310Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:53:45.311Z"}
+{"header":{"requestId":"AV9NZC0C9HWWZ9M2","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T11:53:46.880Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:54:23.136Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:54:23.137Z"}
+{"header":{"requestId":"A8H1FBBDYR8Z3L5X","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T11:54:24.540Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:37.965Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:41.013Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:43.550Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:45.768Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:47.304Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:58.392Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:54:59.508Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:55:01.896Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:55:05.065Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:55:06.341Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:55:15.903Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:55:15.904Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:55:26.538Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:55:29.356Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:55:29.357Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:55:39.927Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:55:45.412Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:55:45.414Z"}
+{"header":{"requestId":"AHFMDE00YC566IPG","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T11:55:46.928Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:56:21.922Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:56:23.200Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:56:39.672Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:56:43.634Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T11:56:46.619Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:56:50.007Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:56:50.008Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T11:57:00.636Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T11:57:03.285Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T11:57:03.287Z"}
+{"header":{"requestId":"A1SU1FAL7GQV320S","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T11:57:04.817Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T12:11:43.852Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T12:11:43.853Z"}
+{"header":{"requestId":"AZBDRTNHX3G8VQYE","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T12:11:45.301Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:41:36.695Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:41:45.543Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:41:47.807Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:42:04.861Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:42:06.516Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:42:15.464Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:42:15.465Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T13:42:26.239Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:42:28.670Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:42:28.672Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T13:42:39.343Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:42:42.209Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:42:42.210Z"}
+{"header":{"requestId":"ATQ7VRDG99XK2GHR","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:42:43.783Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:45:00.760Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:45:03.469Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:45:07.793Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:45:07.793Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:45:09.470Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:45:44.855Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:45:44.856Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:45:46.259Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:46:55.284Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:46:56.374Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:54:36.709Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:54:41.152Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:54:41.152Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:54:43.020Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:54:44.597Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:54:44.597Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:54:45.675Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:55:02.676Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:55:27.425Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:55:31.268Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:55:31.268Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T13:55:42.019Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:55:44.140Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:55:44.147Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:55:45.736Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:56:49.126Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T13:56:51.624Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T13:56:51.624Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T13:56:53.276Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T13:57:16.164Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:00:31.774Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:00:31.775Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:00:42.547Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:00:44.262Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:00:44.262Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:00:54.934Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:00:57.011Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:00:57.012Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:01:07.644Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:01:09.244Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:01:09.244Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:01:10.819Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:11:38.505Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:11:49.631Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:29:12.784Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:29:37.905Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:29:47.916Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:29:47.917Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:29:49.634Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:05.858Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:07.763Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:11.168Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:18.337Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:27.586Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:28.838Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:38.795Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:44.246Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:46.808Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:31:48.295Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:32:03.706Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:32:03.706Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:32:05.426Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:32:19.297Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:32:20.745Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:32:40.615Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:32:44.054Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:32:48.651Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:32:53.258Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:32:53.259Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:33:04.003Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:33:05.803Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:33:05.804Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:33:07.379Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:35:20.305Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:35:20.306Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:35:21.741Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:36:06.890Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:36:09.678Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:36:57.526Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:36:57.527Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:37:08.304Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:37:11.525Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:37:11.526Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:37:22.141Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:37:25.001Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:37:25.002Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:37:26.587Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:37:50.947Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:38:31.443Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:38:35.918Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:38:35.918Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:38:46.629Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:38:49.961Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:38:49.962Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:39:00.642Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:39:03.133Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:39:03.134Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:39:04.676Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:40:17.135Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:40:17.135Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:40:18.606Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:40:22.891Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:40:22.892Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:40:23.923Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:41:40.409Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:41:40.410Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:41:41.839Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:41:52.265Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:41:52.266Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"400","responsemessage":"AUTHENTICATION_FAILED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:41:53.729Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:56:36.790Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:56:36.791Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T14:56:47.349Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:56:49.408Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:56:49.409Z"}
+{"cbareferenceno":"A20048484857854","externalrefno":"A20048484857854","header":{"requestId":"A20048484857854","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:57:07.215Z","transactionRefNo":"A20048484857854"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T14:57:15.544Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T14:57:15.545Z"}
+{"header":{"requestId":"A20048484857854","responsecode":"408","responsemessage":"DUPLICATE_RECORD"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T14:57:18.582Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:57:57.332Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:58:11.784Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:58:13.199Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:58:28.454Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T14:59:20.444Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T15:02:42.688Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T15:02:47.588Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T15:03:02.844Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:03:53.683Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:03:53.684Z"}
+{"externalrefno":"A864786942317107","header":{"requestId":"A864786942317107","responsecode":"000","responsemessage":"SUCCESS"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:04:00.157Z","transactionRefNo":"A864786942317107"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-25T15:26:40.620Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:26:40.621Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch agent billers","service":"agency-service","timestamp":"2025-07-25T15:26:51.180Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-25T15:26:54.057Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:26:54.058Z"}
+{"level":"info","message":"Fetched agent billers","responseData":{"billercategories":{"Donation":[{"billercode":"KGL","billername":"Kigali Genocide Memorial","category":"Donation","serialNo":1}],"Government":[{"billercode":"RRA","billername":"RWANDA REVENUE AUTHORITY","category":"Government","serialNo":1}],"Investment":[{"billercode":"RNIT","billername":"Rwanda National Investment Trust Ltd","category":"Investment","serialNo":1}],"Schools":[{"billercode":"GHA","billername":"Green Hills Academy","category":"Schools","serialNo":1},{"billercode":"FRANCOPM","billername":"Ecole Francophone Antoine De Saint Exupery Pr","category":"Schools","serialNo":2},{"billercode":"FRANCOSM","billername":"Ecole Francophone Antoine De Saint Exupery Sec","category":"Schools","serialNo":3}],"Travel":[{"billercode":"ETLINE","billername":"Ethiopia Airline","category":"Travel","serialNo":1}],"Utilities":[{"billercode":"ELEC","billername":"Prepaid Electricity","category":"Utilities","serialNo":1},{"billercode":"EUCL_ERW","billername":"EUCL repaid Electricity","category":"Utilities","serialNo":1},{"billercode":"STTV","billername":"Startimes Paytv","category":"Utilities","serialNo":2},{"billercode":"GTP-LOAD","billername":"PREPAID CARD LOADING","category":"Utilities","serialNo":3},{"billercode":"RWANDA_WASAC","billername":"RWANDA WATER WASAC","category":"Utilities","serialNo":4}]},"header":{"requestId":"A1753457214060","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T15:26:56.281Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:29:10.741Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:29:10.741Z"}
+{"cbareferenceno":"A440175308846130","externalrefno":"A440175308846130","header":{"requestId":"A440175308846130","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:29:17.595Z","transactionRefNo":"A440175308846130"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:29:19.859Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:29:19.859Z"}
+{"cbareferenceno":"A059026710384057","externalrefno":"A059026710384057","header":{"requestId":"A059026710384057","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:29:26.197Z","transactionRefNo":"A059026710384057"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:29:30.702Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:29:30.703Z"}
+{"cbareferenceno":"A552524874699069","externalrefno":"A552524874699069","header":{"requestId":"A552524874699069","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:29:36.984Z","transactionRefNo":"A552524874699069"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:30:05.579Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:30:05.579Z"}
+{"externalrefno":"A274810711620166","header":{"requestId":"A274810711620166","responsecode":"000","responsemessage":"SUCCESS"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:30:11.572Z","transactionRefNo":"A274810711620166"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:30:27.884Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:30:27.885Z"}
+{"cbareferenceno":"A497036205686302","externalrefno":"A497036205686302","header":{"requestId":"A497036205686302","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:30:34.703Z","transactionRefNo":"A497036205686302"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:31:36.608Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:31:36.609Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:32:23.077Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:32:23.077Z"}
+{"cbareferenceno":"A548182778297627","externalrefno":"A548182778297627","header":{"requestId":"A548182778297627","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:33:51.049Z","transactionRefNo":"A548182778297627"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:34:12.804Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:34:12.805Z"}
+{"cbareferenceno":"A933241440255377","externalrefno":"A933241440255377","header":{"requestId":"A933241440255377","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:34:19.585Z","transactionRefNo":"A933241440255377"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:34:22.009Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:34:22.010Z"}
+{"cbareferenceno":"A421060675453112","externalrefno":"A421060675453112","header":{"requestId":"A421060675453112","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:34:28.297Z","transactionRefNo":"A421060675453112"}
+{"cbareferenceno":"A724339568169005","externalrefno":"A724339568169005","header":{"requestId":"A724339568169005","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:34:33.092Z","transactionRefNo":"A724339568169005"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:35:04.821Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:35:04.822Z"}
+{"cbareferenceno":"A688631857997975","externalrefno":"A688631857997975","header":{"requestId":"A688631857997975","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:35:11.595Z","transactionRefNo":"A688631857997975"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:35:13.696Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:35:13.697Z"}
+{"cbareferenceno":"A195505653408050","externalrefno":"A195505653408050","header":{"requestId":"A195505653408050","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:35:20.096Z","transactionRefNo":"A195505653408050"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:36:07.162Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:36:07.162Z"}
+{"cbareferenceno":"A225288579542272","externalrefno":"A225288579542272","header":{"requestId":"A225288579542272","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:36:16.133Z","transactionRefNo":"A225288579542272"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:36:31.811Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:36:31.811Z"}
+{"externalrefno":"A886537091552549","header":{"requestId":"A886537091552549","responsecode":"000","responsemessage":"SUCCESS"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:36:37.645Z","transactionRefNo":"A886537091552549"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:37:14.035Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:37:14.036Z"}
+{"cbareferenceno":"A858993813456127","externalrefno":"A858993813456127","header":{"requestId":"A858993813456127","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:37:24.226Z","transactionRefNo":"A858993813456127"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:37:26.684Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:37:26.685Z"}
+{"cbareferenceno":"A916032861276008","externalrefno":"A916032861276008","header":{"requestId":"A916032861276008","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:37:36.206Z","transactionRefNo":"A916032861276008"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/bill-payment-fee","service":"agency-service","timestamp":"2025-07-25T15:38:41.790Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:38:41.791Z"}
+{"level":"info","message":"Fetched bill payment fee","responseData":{"amount":6000,"fee":0,"header":{"requestId":"A1753457921794","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-25T15:38:43.576Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:40:56.672Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:40:56.673Z"}
+{"cbareferenceno":"A692366795301602","externalrefno":"A692366795301602","header":{"requestId":"A692366795301602","responsecode":"500","responsemessage":"INTERNAL_SERVER_ERROR"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:41:03.551Z","transactionRefNo":"A692366795301602"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:41:53.584Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:41:53.585Z"}
+{"header":{"requestId":"A707877874502786","responsecode":"409","responsemessage":"TRANSACTION_LIMIT_EXCEEDED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:41:57.106Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:45:38.909Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:45:38.909Z"}
+{"amount":"5000.00","billerCode":"KGL","ccy":"RWF","customerNumber":"5252525","email":"","level":"warn","message":"Missing required fields for bill payment","productCode":"KGL","service":"agency-service","subagent":"30012345","timestamp":"2025-07-25T15:45:38.912Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:46:03.282Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:46:03.283Z"}
+{"header":{"requestId":"A694939384455966","responsecode":"409","responsemessage":"TRANSACTION_LIMIT_EXCEEDED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:46:06.764Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:46:32.095Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:46:32.095Z"}
+{"header":{"requestId":"A020597877984620","responsecode":"0","responsemessage":""},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:46:40.691Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:46:45.812Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:46:45.813Z"}
+{"header":{"requestId":"A803538268249826","responsecode":"0","responsemessage":""},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:46:54.286Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T15:47:00.592Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T15:47:00.593Z"}
+{"header":{"requestId":"A837915126094474","responsecode":"409","responsemessage":"TRANSACTION_LIMIT_EXCEEDED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T15:47:04.204Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T16:38:56.567Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T16:38:56.568Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-25T16:39:07.324Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T16:39:10.913Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T16:39:10.913Z"}
+{"header":{"requestId":"A206007591969428","responsecode":"409","responsemessage":"TRANSACTION_LIMIT_EXCEEDED"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T16:39:15.467Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-25T16:46:34.477Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T16:46:34.477Z"}
+{"externalrefno":"A655880457886764","header":{"requestId":"A655880457886764","responsecode":"000","responsemessage":"SUCCESS"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-25T16:46:40.362Z","transactionRefNo":"A655880457886764"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/getbalance","service":"agency-service","timestamp":"2025-07-25T16:47:30.729Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T16:47:30.729Z"}
+{"level":"info","message":"Get Account Balance endpoint ","service":"agency-service","timestamp":"2025-07-25T16:47:30.730Z"}
+{"header":{"requestId":"A1753462050731","responsecode":"400","responsemessage":"Authentication failed"},"level":"info","message":"Account balance response received","service":"agency-service","timestamp":"2025-07-25T16:47:32.469Z"}
+{"0":"A","1":"u","10":"t","11":"i","12":"o","13":"n","14":" ","15":"f","16":"a","17":"i","18":"l","19":"e","2":"t","20":"d","3":"h","4":"e","5":"n","6":"t","7":"i","8":"c","9":"a","level":"warn","message":"Failed to retrieve balance","service":"agency-service","timestamp":"2025-07-25T16:47:32.470Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:48:30.408Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:48:37.274Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:49:30.397Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:49:36.489Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:49:48.535Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:50:02.354Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T16:50:09.967Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:12:10.087Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:12:35.960Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:12:46.479Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:13:05.900Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:13:08.246Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:17.101Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:26.946Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:30.316Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:33.389Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:37.897Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:39.562Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:14:59.922Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:15:06.823Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:15:20.928Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:15:35.683Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:15:41.821Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:15:46.175Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:15:59.738Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:16:46.378Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:16:59.816Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:00.874Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:15.656Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:30.268Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:33.092Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:34.960Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:46.401Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:48.534Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:52.006Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:57.440Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:17:59.883Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:18:02.662Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:38:45.446Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/getbalance","service":"agency-service","timestamp":"2025-07-25T17:39:42.148Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T17:39:42.148Z"}
+{"level":"info","message":"Get Account Balance endpoint ","service":"agency-service","timestamp":"2025-07-25T17:39:42.152Z"}
+{"accounts":[{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Cash In","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Cash Out","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Bill Payment","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Airtime","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Token Cash Out","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Agent to Agent","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":222,"commAccountNo":"6700494283","servicename":"Receive Remittance","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"},{"ccy":"RWF","commAccountBalance":0,"commAccountNo":"N/A","servicename":"Send Remittance ","tradingAccountBalance":30693249,"tradingAccountNo":"6775009514"}],"header":{"requestId":"A779634244269775","responsecode":"000","responsemessage":"Success"},"level":"info","message":"Account balance response received","service":"agency-service","timestamp":"2025-07-25T17:39:44.980Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T17:41:47.486Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T17:41:47.487Z"}
+{"level":"error","message":"TypeError: crypto.createHash is not a function\n    at validateNID (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:103:31)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-25T17:41:47.495Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:42:36.687Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:42:47.172Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:42:52.460Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:43:00.157Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:43:45.711Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:46:11.606Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:46:18.630Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:47:12.980Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:47:14.977Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:47:20.999Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:48:18.767Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:48:47.031Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:48:53.505Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:49:13.379Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:50:14.648Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:50:16.476Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:50:17.948Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:50:50.179Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:50:53.861Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:50:58.910Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:51:01.600Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:51:06.002Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:51:12.055Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:51:16.180Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:51:31.374Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:51:33.992Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:16.288Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:19.386Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:23.269Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:28.304Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:30.094Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:36.365Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:41.671Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:43.838Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:55.787Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:52:57.754Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:53:01.206Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:53:05.083Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:53:07.151Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:53:20.208Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:53:28.286Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:53:49.786Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:54:03.183Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T17:54:05.361Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:03:46.921Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:04:05.440Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:04:09.722Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:04:15.397Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:05:22.955Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:05:31.236Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:05:36.324Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:05:40.145Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:06:00.166Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:06:00.167Z"}
+{"level":"info","message":"NID validation response","responseData":{"header":{"requestId":"A526794090249603","responsecode":"501","responsemessage":"HEADER_VALIDATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T18:06:01.100Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:14:50.905Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:14:50.906Z"}
+{"error":"read ECONNRESET","level":"error","message":"NID validation failed","service":"agency-service","timestamp":"2025-07-25T18:15:01.476Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:15:03.806Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:15:03.807Z"}
+{"level":"info","message":"NID validation response","responseData":{"header":{"requestId":"A056333751515997","responsecode":"501","responsemessage":"HEADER_VALIDATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T18:15:04.581Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:16:51.590Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:16:58.867Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:17:14.721Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:17:18.556Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:17:18.557Z"}
+{"level":"error","message":"ReferenceError: header is not defined\n    at validateNID (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:91:6)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-25T18:17:18.562Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:17:48.855Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:17:52.306Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:17:52.307Z"}
+{"error":"read ECONNRESET","level":"error","message":"NID validation failed","service":"agency-service","timestamp":"2025-07-25T18:18:03.067Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:18:05.715Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:18:05.715Z"}
+{"level":"info","message":"NID validation response","responseData":{"header":{"requestId":"A339556736137064","responsecode":"501","responsemessage":"HEADER_VALIDATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T18:18:06.511Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:19:42.272Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:19:53.755Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:20:22.643Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T18:20:25.156Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T18:20:29.100Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T18:20:29.101Z"}
+{"level":"info","message":"NID validation response","responseData":{"header":{"requestId":"A193193905965833","responsecode":"501","responsemessage":"HEADER_VALIDATION_FAILED"}},"service":"agency-service","timestamp":"2025-07-25T18:20:29.914Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:09.769Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:13.313Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:22.597Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:23.959Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:29.490Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:47.695Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:36:56.263Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:08.147Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:12.825Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:16.748Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:19.897Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:22.546Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:57.827Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:37:59.295Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:38:37.490Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:39:05.410Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:39:07.295Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:39:09.566Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:39:26.975Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:39:26.976Z"}
+{"error":"read ECONNRESET","level":"error","message":"NID validation failed","service":"agency-service","timestamp":"2025-07-25T19:39:38.017Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:40:04.775Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:40:10.180Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:40:16.812Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:40:16.813Z"}
+{"level":"error","message":"ReferenceError: AFF_CODE is not defined\n    at generateRequestToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/utils/helper.js:19:15)\n    at validateIdentity (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:157:24)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)","service":"agency-service","timestamp":"2025-07-25T19:40:16.818Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:41:39.049Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:41:59.939Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:42:01.695Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:42:17.849Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:42:22.689Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:43:15.756Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:43:44.496Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:43:44.497Z"}
+{"level":"error","message":"ReferenceError: AFF_CODE is not defined\n    at generateRequestToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/utils/helper.js:19:15)\n    at validateIdentity (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:95:24)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)","service":"agency-service","timestamp":"2025-07-25T19:43:44.502Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:45:46.034Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:45:46.035Z"}
+{"level":"error","message":"ReferenceError: AFF_CODE is not defined\n    at generateRequestToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/utils/helper.js:19:15)\n    at validateIdentity (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:95:24)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)","service":"agency-service","timestamp":"2025-07-25T19:45:46.038Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:46:39.774Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:46:42.702Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:47:50.042Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:48:07.098Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:48:07.100Z"}
+{"level":"error","message":"ReferenceError: AFF_CODE is not defined\n    at generateRequestToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/utils/helper.js:19:15)\n    at validateIdentity (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:95:24)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)","service":"agency-service","timestamp":"2025-07-25T19:48:07.104Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:50:41.209Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:50:47.662Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:50:51.155Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:50:53.932Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:50:55.858Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:50:58.186Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:51:22.204Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:51:23.817Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:51:28.427Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:51:28.428Z"}
+{"level":"error","message":"ReferenceError: sourceIp is not defined\n    at generateRequestToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/utils/helper.js:19:65)\n    at validateIdentity (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/account-controller.js:95:24)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)","service":"agency-service","timestamp":"2025-07-25T19:51:28.434Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:53:29.321Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:54:12.126Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:54:13.747Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:55:11.898Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:55:14.761Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:57:46.117Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:57:47.382Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:57:52.518Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:58:24.825Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:58:36.143Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:58:47.002Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:58:48.618Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-25T19:58:58.445Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-25T19:58:58.447Z"}
+{"level":"info","message":"Identity validation response","requestId":"A627647567575807","responseData":{"header":{"requestId":"A627647567575807","responsecode":"429","responsemessage":"EXTERNAL_RESOURCE_ERROR"}},"service":"agency-service","timestamp":"2025-07-25T19:58:59.256Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:59:42.671Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T19:59:47.407Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-25T22:39:39.214Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:35:24.288Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-28T12:38:22.931Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T12:38:22.932Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-28T12:38:34.211Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-28T12:38:37.785Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T12:38:37.786Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment failed","service":"agency-service","timestamp":"2025-07-28T12:38:48.649Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-28T12:38:58.041Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T12:38:58.041Z"}
+{"header":{"requestId":"A756524581494379","responsecode":"434","responsemessage":"INVALID_DEBIT_ACCOUNT"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-28T12:39:00.427Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-07-28T12:39:30.759Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T12:39:30.759Z"}
+{"header":{"requestId":"A003567155554809","responsecode":"434","responsemessage":"INVALID_DEBIT_ACCOUNT"},"level":"info","message":"Bill payment response:","service":"agency-service","timestamp":"2025-07-28T12:39:34.113Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-07-28T12:39:58.508Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T12:39:58.509Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1753706398511","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-28T12:40:00.839Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validateidentity","service":"agency-service","timestamp":"2025-07-28T12:40:16.288Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T12:40:16.289Z"}
+{"level":"info","message":"Identity validation response","requestId":"A820576187605101","responseData":{"header":{"requestId":"A820576187605101","responsecode":"429","responsemessage":"EXTERNAL_RESOURCE_ERROR"}},"service":"agency-service","timestamp":"2025-07-28T12:40:16.813Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:47:10.989Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:47:17.978Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:47:19.444Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:47:22.502Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:58:26.846Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T12:58:28.754Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:03:50.466Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:06:50.341Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:07:00.561Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:08:35.219Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:08:37.972Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:08:39.224Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:08:40.497Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:41:10.601Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:41:14.679Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:41:36.139Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:41:41.540Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:41:42.517Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:21.573Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:23.336Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:42.953Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:43.988Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:48.699Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:49.877Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:42:51.187Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:04.195Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:05.784Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:06.756Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:08.946Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:15.588Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:16.735Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:43:25.891Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:57:39.540Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:57:51.343Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T13:58:36.438Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/account-openning","service":"agency-service","timestamp":"2025-07-28T13:58:42.755Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T13:58:42.756Z"}
+{"level":"error","message":"ReferenceError: generateTransactionToken is not defined\n    at openAccount (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/banking-controller.js:185:28)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-28T13:58:42.764Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:00:08.236Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:00:42.297Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:01:02.906Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:01:18.471Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:01:37.139Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/account-openning","service":"agency-service","timestamp":"2025-07-28T14:01:43.451Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T14:01:43.452Z"}
+{"level":"error","message":"ReferenceError: Cannot access 'destinationAccount' before initialization\n    at openAccount (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/banking-controller.js:181:67)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-28T14:01:43.458Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:02:44.913Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:02:47.097Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:03:40.594Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:03:58.665Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:03:59.726Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:04:02.256Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:04:05.085Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/account-openning","service":"agency-service","timestamp":"2025-07-28T14:04:26.367Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T14:04:26.369Z"}
+{"level":"error","message":"ReferenceError: Cannot access 'amountFormatted' before initialization\n    at openAccount (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/banking-controller.js:182:87)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-28T14:04:26.383Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:05:03.636Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:05:06.822Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:05:16.517Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-07-28T14:05:21.767Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/account-openning","service":"agency-service","timestamp":"2025-07-28T14:05:24.913Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T14:05:24.914Z"}
+{"level":"error","message":"ReferenceError: REQUEST_TYPE is not defined\n    at openAccount (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/banking-controller.js:195:20)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-28T14:05:24.921Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-28T17:31:24.011Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T17:31:24.012Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch agent billers","service":"agency-service","timestamp":"2025-07-28T17:31:34.756Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-28T17:31:47.367Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T17:31:47.368Z"}
+{"error":"read ECONNRESET","level":"error","message":"Failed to fetch agent billers","service":"agency-service","timestamp":"2025-07-28T17:31:57.935Z"}
+{"level":"info","message":"Received GET request to /api/agencybanking/eco/services/agent-billers","service":"agency-service","timestamp":"2025-07-28T17:32:03.602Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T17:32:03.603Z"}
+{"level":"info","message":"Fetched agent billers","responseData":{"billercategories":{"Donation":[{"billercode":"KGL","billername":"Kigali Genocide Memorial","category":"Donation","serialNo":1}],"Government":[{"billercode":"RRA","billername":"RWANDA REVENUE AUTHORITY","category":"Government","serialNo":1}],"Investment":[{"billercode":"RNIT","billername":"Rwanda National Investment Trust Ltd","category":"Investment","serialNo":1}],"Schools":[{"billercode":"GHA","billername":"Green Hills Academy","category":"Schools","serialNo":1},{"billercode":"FRANCOPM","billername":"Ecole Francophone Antoine De Saint Exupery Pr","category":"Schools","serialNo":2},{"billercode":"FRANCOSM","billername":"Ecole Francophone Antoine De Saint Exupery Sec","category":"Schools","serialNo":3}],"Travel":[{"billercode":"ETLINE","billername":"Ethiopia Airline","category":"Travel","serialNo":1}],"Utilities":[{"billercode":"ELEC","billername":"Prepaid Electricity","category":"Utilities","serialNo":1},{"billercode":"EUCL_ERW","billername":"EUCL repaid Electricity","category":"Utilities","serialNo":1},{"billercode":"STTV","billername":"Startimes Paytv","category":"Utilities","serialNo":2},{"billercode":"GTP-LOAD","billername":"PREPAID CARD LOADING","category":"Utilities","serialNo":3},{"billercode":"RWANDA_WASAC","billername":"RWANDA WATER WASAC","category":"Utilities","serialNo":4}]},"header":{"requestId":"A1753723923606","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-07-28T17:32:06.093Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/account-openning","service":"agency-service","timestamp":"2025-07-28T19:02:39.650Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-07-28T19:02:39.651Z"}
+{"level":"error","message":"ReferenceError: REQUEST_TYPE is not defined\n    at openAccount (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/agency-service/src/controllers/banking-controller.js:195:20)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\agency-service\\node_modules\\router\\index.js:186:3)","service":"agency-service","timestamp":"2025-07-28T19:02:39.657Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-08-03T09:22:11.064Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-08-03T09:22:16.210Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-08-03T09:22:16.212Z"}
+{"error":"read ECONNRESET","level":"error","message":"Bill payment validation failed","service":"agency-service","timestamp":"2025-08-03T09:22:26.960Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-08-03T09:22:30.488Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-08-03T09:22:30.489Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":100,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1754212950492","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-08-03T09:22:32.898Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-08-03T09:23:42.558Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-08-03T09:24:20.170Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-08-03T09:24:23.301Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-08-03T09:24:27.692Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-08-03T09:24:31.083Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-08-03T09:24:31.083Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"beneficiaryname":"John Doe","fee":0,"header":{"requestId":"A1754213071087","responsecode":"000","responsemessage":"SUCCESS"}},"service":"agency-service","timestamp":"2025-08-03T09:24:33.631Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/validate/biller","service":"agency-service","timestamp":"2025-08-03T09:25:18.196Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-08-03T09:25:18.198Z"}
+{"level":"info","message":"Bill payment validation response","responseData":{"amount":0,"fee":0,"header":{"requestId":"A1754213118202","responsecode":"E55","responsemessage":"Error validating billpayment"}},"service":"agency-service","timestamp":"2025-08-03T09:25:19.883Z"}
+{"level":"info","message":"Agency service running on port 3002","service":"agency-service","timestamp":"2025-08-03T09:26:09.238Z"}
+{"level":"info","message":"Received POST request to /api/agencybanking/eco/services/execute-bill-payment","service":"agency-service","timestamp":"2025-08-03T10:08:08.178Z"}
+{"level":"info","message":"Request body, [object Object]","service":"agency-service","timestamp":"2025-08-03T10:08:08.179Z"}
+{"amount":"200.00","billerCode":"RRA","ccy":"RWF","clientPhone":"+250789595309","customerId":"+250789595309","email":"mahamealfred@gmail.com","level":"warn","message":"Missing required fields for bill payment","productCode":"RRA","requestId":"a196d6c8-d25a-49d4-8cc0-5339a6724736","service":"agency-service","timestamp":"2025-08-03T10:08:08.186Z"}

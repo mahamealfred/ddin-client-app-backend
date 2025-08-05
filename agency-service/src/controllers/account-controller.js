@@ -1,47 +1,42 @@
 import axios from 'axios';
-import crypto from 'crypto';
 import logger from '../utils/logger.js';
-import { generateRequestToken } from '../utils/helper.js';
+import { generateRequestId, generateRequestToken } from '../utils/helper.js';
+import dotenv from 'dotenv';
+import CryptoJS from 'crypto-js';
+
+dotenv.config();
+
+
+const AGENT_CODE = process.env.AGENT_CODE ;
+const PIN = process.env.AGENT_PIN ; 
+const AFFCODE = 'ERW';
+const SOURCE_CODE = 'DDIN';
+const sourceIp = "10.8.245.9"
+const ccy = "RWF";
+const CHANNEL="API"
+  const requestId = generateRequestId(); // or use uuid
 
 export const getEcoBankAccountBalance = async (req, res) => {
 
-
   logger.info(`Get Account Balance endpoint `);
 
-
-  // These values could come dynamically or from environment vars
-  const affcode = "ERW";
-  const agentcode = "32650551883";
-  const sourceCode = "DDIN";
-  const requestId = "A" + Date.now(); // or use uuid
-  const pin = "123456"; // you can make this secure
-  const ccy = "RWF";
-  const destinationAccount = "000000000000"; // if not used, use default
-  const amount = "0";
-  const sourceIp = "10.8.245.9"
-
-  // Generate requestToken = SHA512 ( AffiliateCode + Request ID + Agent Code + Source Code + IP )
-  const requestToken = crypto
-    .createHash('sha512')
-    .update(affcode + requestId + agentcode + sourceCode + sourceIp)
-    .digest('hex');
-
-  //  Generate transactionToken = SHA512 ( IP + Request ID + Agent Code + ccy + destAcc + amount + PIN )
-  const transactionToken = crypto
-    .createHash('sha512')
-    .update(sourceIp + requestId + agentcode + ccy + destinationAccount + amount + pin)
-    .digest('hex');
+      //const amountFormatted = parseFloat(amount).toFixed(2);
+  
+      const requestTokenString = `${AFFCODE}${requestId}${AGENT_CODE}${SOURCE_CODE}${sourceIp}`;
+      const requestToken = CryptoJS.SHA512(requestTokenString).toString();
+      const tokenString = sourceIp + requestId + AGENT_CODE + PIN;
+      const transactionToken = CryptoJS.SHA512(tokenString).toString();
 
   const data = {
     header: {
-      affcode,
+      affcode:AFFCODE,
       requestId,
       requestToken,
-      sourceCode,
+      sourceCode:SOURCE_CODE,
       sourceIp,
-      channel: "API",
+      channel: CHANNEL,
       requesttype: "VALIDATE",
-      agentcode
+      agentcode:AGENT_CODE
     },
     transactiontoken: transactionToken
   };
@@ -85,66 +80,72 @@ export const getEcoBankAccountBalance = async (req, res) => {
 };
 
 
-//Validate national ID
-
-export const validateNID = async (req, res) => {
+export const validateIdentity = async (req, res) => {
   const { idNumber } = req.body;
 
-  const header = {
-    sourceCode: "DDIN",
-    affcode: "EGN",
-    requestId: "A" + Date.now(),
-    agentcode: "32650551883",
-    requesttype: "ACCOUNT_OPENING",
-    sourceIp: "10.8.245.9",
-    channel: "API"
-  };
-
-  const tokenString = header.affcode + header.requestId + header.agentcode + header.sourceCode + header.sourceIp;
-  const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
-  header.requestToken = requestToken;
-
+  if (!idNumber) {
+    logger.warn('Missing required field: idNumber', req.body);
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required field: idNumber',
+    });
+  }
+  const requestId = generateRequestId();
+  const requestToken = generateRequestToken(AFFCODE,requestId,AGENT_CODE,SOURCE_CODE,sourceIp);
   const payload = {
-    header,
+    header: {
+      sourceCode: SOURCE_CODE,
+      affcode: AFFCODE,
+      requestId,
+      agentcode: AGENT_CODE,
+      requestToken,
+      requesttype: 'ACCOUNT_OPENING',
+      sourceIp,
+      channel: CHANNEL,
+    },
     idNumber,
-    base64Image: ""
+    base64Image: ''
   };
 
   const config = {
     method: 'post',
+    maxBodyLength: Infinity,
     url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/validateidentity',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
-    data: payload
+    data: payload,
   };
 
   try {
     const response = await axios.request(config);
     const responseData = response.data;
 
-    logger.info('NID validation response', { responseData });
+    logger.info('Identity validation response', { requestId, responseData });
 
-    if (responseData?.header?.responsecode === "000") {
+    if (responseData?.header?.responsecode === '000') {
       return res.status(200).json({
         success: true,
-        message: "NID validated successfully",
-        data: responseData
+        message: 'Identity validation successful',
+        data: responseData,
       });
     } else {
       return res.status(400).json({
         success: false,
-        message: responseData?.header?.responsemessage,
-        code: responseData?.header?.responsecode
+        message: responseData?.header?.responsemessage || 'Validation failed',
+        code: responseData?.header?.responsecode,
       });
     }
-
   } catch (error) {
-    logger.error('NID validation failed', { error: error?.response?.data || error.message });
+    logger.error(' Identity validation failed', {
+      requestId,
+      error: error?.response?.data || error.message,
+    });
+
     return res.status(500).json({
       success: false,
-      message: "Internal server error",
-      error: error?.response?.data || error.message
+      message: 'Internal server error during identity validation',
+      error: error?.response?.data || error.message,
     });
   }
 };

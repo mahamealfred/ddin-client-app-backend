@@ -21,8 +21,14 @@ const loginService = async (req, res, username, password) => {
         logger.warn("Successfully logged");
         return res.status(200).json({
             success: true,
+            data:{
+            id,
+            name:response.data.name,
+            email:response.data.email,
             accessToken,
             refreshToken
+            }
+          
 
         });
     } catch (error) {

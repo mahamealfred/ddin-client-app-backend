@@ -27,4 +27,5 @@ const generateTokens = async (username,email,token,id) => {
   return { accessToken, refreshToken };
 };
 
+
 export default generateTokens

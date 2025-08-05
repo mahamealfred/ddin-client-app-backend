@@ -63,3 +63,99 @@
 {"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:30:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:49:9)","timestamp":"2025-07-17T10:42:14.339Z"}
 {"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-17T10:42:42.904Z"}
 {"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:30:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:49:9)","timestamp":"2025-07-17T10:42:42.905Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T13:51:48.918Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T13:52:43.135Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T13:58:02.339Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T17:53:29.141Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T17:54:45.429Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T17:55:19.462Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:04.021Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:04.235Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:04.633Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:05.047Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:27.150Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:27.365Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:52.137Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:31:52.658Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:32:38.614Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:32:39.250Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:34:05.574Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:34:05.797Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:36:31.161Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:36:31.514Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:36:42.864Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:36:59.842Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:37:00.545Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:37:00.762Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:37:15.876Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:37:16.246Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:37:16.763Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:37:17.337Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:40:07.052Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:40:07.673Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:40:08.386Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:40:08.792Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:40:28.554Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:40:28.589Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:44:46.510Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:44:46.708Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:44:46.978Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:48:56.262Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:49:01.225Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'status')\n    at findUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:111:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","service":"identity-service","timestamp":"2025-07-19T18:49:01.227Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:03.530Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:04.264Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:16.474Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:33.877Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:40.822Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:43.181Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:51:45.839Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:52:01.189Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:52:56.559Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:52:57.349Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:53:08.437Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:54:07.471Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:54:32.319Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-19T18:54:45.624Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:27.100Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:31.602Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:48.511Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:51.776Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:53.109Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:55.073Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:56.105Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:40:59.457Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:41:01.811Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:41:02.532Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:41:05.292Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:41:06.828Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T09:41:09.183Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T12:52:32.461Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:01:31.193Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:12:24.352Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:30:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:49:9)","timestamp":"2025-07-20T13:12:24.355Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:12:32.605Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:27:23.908Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:36:08.302Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:36:09.250Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:36:10.558Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:36:11.988Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:36:59.959Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T13:37:32.597Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T20:11:10.135Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-20T20:28:29.490Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-21T09:11:31.875Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-21T13:41:32.271Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-21T21:36:42.170Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-21T21:36:42.325Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-21T21:36:43.153Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-07-21T21:36:44.598Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:38:41.673Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:38:42.019Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:38:42.031Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:38:42.040Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:49:48.022Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:49:48.998Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:49:49.003Z"}
+{"level":"error","message":"Get Account History error occurred Cannot read properties of undefined (reading 'map')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'map')\n    at getAccountHistory (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/account-controller.js:97:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-21T21:49:49.560Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-08-03T14:18:01.326Z"}

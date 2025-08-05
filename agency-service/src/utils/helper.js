@@ -1,11 +1,18 @@
 
-import crypto from 'crypto';
+import CryptoJS from 'crypto-js';
 
 
-/**
- * Helper to generate request token (SHA-512)
- */
-export const generateRequestToken = ({ affcode, requestId, agentcode, sourceCode, sourceIp }) => {
-    const tokenString = affcode + requestId + agentcode + sourceCode + sourceIp;
-    return crypto.createHash('sha512').update(tokenString).digest('hex');
-};
+export const generateRequestId=() =>{
+    let id = 'A';
+    for (let i = 0; i < 15; i++) {
+        id += Math.floor(Math.random() * 10); 
+    }
+    return id;
+}
+
+export const generateRequestToken=(AFFCODE,requestId,AGENT_CODE,SOURCE_CODE,sourceIp)=> {
+     const requestTokenString = `${AFFCODE}${requestId}${AGENT_CODE}${SOURCE_CODE}${sourceIp}`;
+     const requestToken = CryptoJS.SHA512(requestTokenString).toString();
+  
+  return requestToken;
+}

@@ -17,7 +17,7 @@ const validateToken = (req, res, next) => {
     if (err) {
       logger.warn("Invalid token!");
       return res.status(429).json({
-        message: "Invalid token!",
+        message: "Your session has expired. Please log in again to continue.",
         success: false,
       });
     }

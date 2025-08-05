@@ -85,12 +85,15 @@ const agentLogin = async (req, res) => {
 //Search User
 const findUser = async (req, res) => {
     logger.info("FindUser endpoint hit...");
-
+ const username = "topupuser";
+        const password = "Topup@123"
+        const topupUserAuth = Buffer.from(`${username}:${password}`).toString('base64');
     try {
         const userName = req.params.user
 
         const response = await axios.get(`https://test.ddin.rw/coretest/rest/members/principal/${userName}`, {
             headers: {
+                Authorization: `Basic ${topupUserAuth}`,
                 'Content-Type': 'application/json',
             },
         });
@@ -98,6 +101,7 @@ const findUser = async (req, res) => {
         logger.warn("Successfully logged");
         return res.status(200).json({
             success: true,
+            message:"User details",
             data: response.data
 
         });

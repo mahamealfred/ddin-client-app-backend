@@ -10,7 +10,7 @@ import {RateLimiterRedis} from "rate-limiter-flexible";
 import Redis from "ioredis";
 import errorHandler from "./middleware/errorHandler.js";
 import routes from "./routes/identity-service.js";
-
+import accountRoutes from "./routes/account-service.js";
 dotenv.config()
 
 
@@ -70,7 +70,7 @@ app.use("/api/auth/register", sensitiveEndpointsLimiter);
 
 //Routes
 app.use("/api/auth", routes);
-
+app.use("/api/accounts", accountRoutes);
   //error handler
 app.use(errorHandler);
 

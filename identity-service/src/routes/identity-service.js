@@ -6,7 +6,7 @@ import { resgiterUser, loginUser, refreshTokenUser, logoutUser, findUser } from 
 const router = express.Router();
 
 router.post("/register", resgiterUser);
-router.get("/login", loginUser);
+router.post("/login", loginUser);
 router.post("/refresh-token", refreshTokenUser);
 router.post("/logout", logoutUser);
 router.get("/find/:user", findUser);
