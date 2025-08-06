@@ -14,7 +14,7 @@ import routes from "./routes/agency-service.js";
 dotenv.config()
 
 const app = express();
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 4001
 
 
 const redisClient = new Redis(process.env.REDIS_URL);

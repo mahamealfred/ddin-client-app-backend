@@ -15,7 +15,7 @@ import  { validateToken } from "./middleware/authMiddleware.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 const redisClient = new Redis(process.env.REDIS_URL);
 
@@ -158,7 +158,7 @@ app.use(
 
 //Test validation
 app.use(
-  "/v1/agencytest/eco/services/execute",
+  "/v1/agencytest/thirdpartyagency/services/execute",
   validateToken,
   proxy(process.env.TEST_SERVICE_URL, {
     ...proxyOptions,

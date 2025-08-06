@@ -2433,3 +2433,4 @@
 {"accountno":"0011002948","level":"info","message":"Initiating customer detail validation","service":"agency-service","timestamp":"2025-08-05T11:17:01.384Z"}
 {"level":"info","message":"Sending request to Ecobank API","requestId":"A1754392621385","service":"agency-service","timestamp":"2025-08-05T11:17:01.385Z"}
 {"customername":"ENCRYPTED DATA2670978","header":{"requestId":"A1754392621385","responsecode":"000","responsemessage":"SUCCESS"},"level":"info","message":"Received response","service":"agency-service","timestamp":"2025-08-05T11:17:03.659Z"}
+{"level":"info","message":"Agency Test service running on port 4006","service":"agency-service","timestamp":"2025-08-05T17:38:34.002Z"}
