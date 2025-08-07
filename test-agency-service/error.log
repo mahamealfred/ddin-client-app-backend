@@ -149,3 +149,9 @@
 {"coreError":{"errorCode":"NOT_FOUND","errorDetails":"TRANSFER_TYPE"},"errorDetails":"TRANSFER_TYPE","level":"error","message":"EcoCashOut failed","service":"agency-service","status":404,"timestamp":"2025-08-05T09:55:16.704Z"}
 {"coreError":{"errorCode":"PERMISSION_DENIED"},"level":"error","message":"EcoCashOut failed","service":"agency-service","status":403,"timestamp":"2025-08-05T10:48:35.549Z"}
 {"0":"r","1":"e","10":"R","11":"E","12":"S","13":"E","14":"T","2":"a","3":"d","4":" ","5":"E","6":"C","7":"O","8":"N","9":"N","level":"error","message":"Request failed","service":"agency-service","timestamp":"2025-08-05T11:16:42.257Z"}
+{"error":{"msg":"Invalid Vend Category specified"},"level":"error","message":"Phone number validation failed","service":"agency-service","status":400,"timestamp":"2025-08-06T20:13:42.070Z"}
+{"error":{"msg":"Failed to validate/invalid payment reference"},"level":"error","message":"Phone number validation failed","service":"agency-service","status":400,"timestamp":"2025-08-07T10:30:45.383Z"}
+{"0":"r","1":"e","10":"R","11":"E","12":"S","13":"E","14":"T","2":"a","3":"d","4":" ","5":"E","6":"C","7":"O","8":"N","9":"N","level":"error","message":"Request failed","service":"agency-service","timestamp":"2025-08-07T10:35:05.664Z"}
+{"level":"error","message":"ReferenceError: total_amount is not defined\n    at bulkSmsPayment (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/test-agency-service/src/controllers/payment-controller.js:787:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","service":"agency-service","timestamp":"2025-08-07T13:07:46.189Z"}
+{"level":"error","message":"Bulk SMS payment failed","service":"agency-service","timestamp":"2025-08-07T13:08:06.071Z"}
+{"level":"error","message":"Bulk SMS payment failed","service":"agency-service","timestamp":"2025-08-07T13:08:37.950Z"}

@@ -3,9 +3,9 @@ import crypto from 'crypto';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
 import CryptoJS from 'crypto-js';
-import { generateFDIAccessToken, generateRequestId } from '../utils/helper.js';
+import { billercategories, generateFDIAccessToken, generateRequestId } from '../utils/helper.js';
 import jwt from "jsonwebtoken";
-import { buildAirtimePayload, buildElecticityPayload, buildGenericBillerPayload, buildStartimePayload } from '../utils/payloadBuilder.js';
+import { buildAirtimePayload, buildElecticityPayload, buildGenericBillerPayload, buildRRABillerPayload, buildStartimePayload } from '../utils/payloadBuilder.js';
 
 dotenv.config();
 
@@ -368,6 +368,8 @@ const payload =
     ? buildElecticityPayload({ amount, requestId, ccy, customerId, clientPhone })
     : billerCode.toLowerCase() === 'paytv'
     ? buildStartimePayload({ amount, requestId, ccy, customerId, clientPhone })
+     : billerCode.toLowerCase() === 'tax'
+    ? buildRRABillerPayload({ amount, requestId, ccy, customerId, clientPhone })
     : buildGenericBillerPayload({
         amount,
         requestId,
@@ -689,3 +691,193 @@ export const getBillPaymentFee = async (req, res) => {
     }
 };
 
+//Get billers
+export const getBillerList = async (req, res) => {
+    try {
+        const { category } = req.query;
+
+        let billers = [];
+
+        if (category) {
+            if (billercategories[category]) {
+                billers = billercategories[category];
+            } else {
+                return res.status(404).json({
+                    success: false,
+                    message: `Category "${category}" not found`,
+                });
+            }
+        } else {
+            // Flatten all billers into one array
+            for (const key in billercategories) {
+                billers = billers.concat(billercategories[key]);
+            }
+        }
+
+        return res.status(200).json({
+            success: true,
+            message: 'Biller list retrieved successfully',
+            data: billers,
+        });
+    } catch (error) {
+        logger.error('Failed to fetch biller list', {
+            error: error?.message,
+        });
+
+        return res.status(500).json({
+            success: false,
+            message: 'Internal server error',
+            error: error?.message,
+        });
+    }
+};
+//bulk sms
+export const bulkSmsPayment = async (req, res) => {
+  const {
+    amount,
+    recipients,
+    senderId,
+    smsMessage,
+    ccy,
+  } = req.body;
+
+  // Validate required fields
+  if (!amount || !recipients || !senderId || !smsMessage || !ccy) {
+    logger.warn('Missing required fields in Bulk SMS payment', req.body);
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required fields in request body.',
+    });
+  }
+
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+
+  let agent_name = 'UnknownAgent';
+  let userAuth = null;
+let total_amount=0
+total_amount=15*recipients.length
+  try {
+    const decodedToken = await new Promise((resolve, reject) =>
+      jwt.verify(token, process.env.JWT_SECRET, (err, user) =>
+        err ? reject(err) : resolve(user)
+      )
+    );
+
+    agent_name = decodedToken.id;
+    userAuth = decodedToken.userAuth;
+  } catch (err) {
+    logger.warn('Invalid token for bulk SMS', { error: err.message });
+    return res.status(401).json({
+      success: false,
+      message: 'Invalid or expired token. Please log in again.',
+    });
+  }
+
+  if (!process.env.CORE_URL) {
+    logger.error('CORE_URL not defined for bulk SMS payment');
+    return res.status(500).json({
+      success: false,
+      message: 'A configuration error occurred. Please contact support.',
+    });
+  }
+
+  const payload = {
+    toMemberId:"142",
+    amount: `${total_amount}`,
+    transferTypeId:"121",
+    currencySymbol:ccy,
+    description:"Bulk SMS Payment",
+  };
+
+  const config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: `${process.env.CORE_URL}/rest/payments/confirmMemberPayment`,
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Basic ${userAuth}`,
+    },
+    data: JSON.stringify(payload),
+  };
+
+  try {
+    const response = await axios.request(config);
+
+    logger.info('Bulk SMS payment successful', {
+      status: response.status,
+      transactionId: response.data?.id,
+      agent: agent_name,
+    });
+
+    if (response.status === 200) {
+      // Optional: record bulk SMS transaction log
+      // await bulkSmsPaymentService(req, res, response, amount, recipients, description, senderId, smsMessage, 'Pindo Bulk SMS', agent_name);
+
+      return res.status(200).json({
+        success: true,
+        message: 'Bulk SMS payment completed successfully.',
+        data: {
+          transactionId: response.data.id,
+          total_amount:total_amount,
+          total_recipients:recipients.length,
+          senderId,
+          smsMessage,
+        //  service: 'Bulk SMS',
+         // agent: agent_name,
+          //timestamp: new Date().toISOString(),
+        },
+      });
+    }
+
+    return res.status(502).json({
+      success: false,
+      message: 'Unexpected response from the payment server. Please try again later.',
+    });
+  } catch (error) {
+    const status = error?.response?.status;
+    const errorDetails = error?.response?.data?.errorDetails;
+    const coreError = error?.response?.data;
+
+    logger.error('Bulk SMS payment failed', {
+      status,
+      errorDetails,
+      coreError,
+    });
+
+    if (status === 400) {
+      let message = 'Unable to process payment due to invalid request.';
+
+      if (errorDetails === 'INVALID_TRANSACTION_PASSWORD') {
+        message = 'Your transaction password is incorrect.';
+      } else if (errorDetails === 'BLOCKED_TRANSACTION_PASSWORD') {
+        message = 'Your transaction password has been blocked. Please contact support.';
+      }
+
+      return res.status(400).json({
+        success: false,
+        message,
+      });
+    }
+
+    if (status === 401) {
+      return res.status(401).json({
+        success: false,
+        message: 'Authentication failed. Please check your credentials.',
+      });
+    }
+
+    if (status === 404) {
+      return res.status(404).json({
+        success: false,
+        message: 'Account not found. Please verify recipient details.',
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      message: "We're unable to complete the transaction right now. Please try again later.",
+      error: coreError || error.message,
+    });
+  }
+};

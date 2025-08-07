@@ -148,6 +148,59 @@ export const validateIdentity = async (req, res) => {
     });
   }
 };
+//NID validation form GTBANK
+export const validateIdentityGTBANK = async (req, res) => {
+  const { idNumber } = req.body;
+
+  if (!idNumber) {
+    logger.warn('Missing required field: idNumber', req.body);
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required field: idNumber',
+    });
+  }
+
+  const url = `https://agencybank.mobicash.rw/api/agent/utilities/user/rest/v.4.14.01/gt-bank-nid-validation?nid=${idNumber}`;
+
+  const config = {
+    method: 'get',
+    maxBodyLength: Infinity,
+    url,
+    headers: {},
+  };
+
+  try {
+    const response = await axios.request(config);
+    const responseData = response.data;
+
+    logger.info('NID validation response', { idNumber, responseData });
+
+    if (responseData?.responseCode === 100) {
+      return res.status(200).json({
+        success: true,
+        message: 'Identity validation successful',
+        data: responseData.data,
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: responseData?.message || 'Validation failed',
+        code: responseData?.responseCode,
+      });
+    }
+  } catch (error) {
+    logger.error('NID validation failed', {
+      idNumber,
+      error: error?.response?.data || error.message,
+    });
+
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error during identity validation',
+      error: error?.response?.data || error.message,
+    });
+  }
+};
 
 export const getCustomerDetails = async (req, res) => {
   const { accountno } = req.body;

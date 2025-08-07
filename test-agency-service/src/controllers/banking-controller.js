@@ -136,12 +136,11 @@ export const executeEcoCashIn = async (req, res) => {
     sendername,
     senderphone,
     senderaccount,
-    subagentcode,
     ccy,
     narration,
   } = req.body;
 
-  if (!amount || !sendername || !senderphone || !senderaccount || !ccy || !subagentcode) {
+  if (!amount || !sendername || !senderphone || !senderaccount || !ccy ) {
     logger.warn('Missing required fields in EcoCashIn request', req.body);
     return res.status(400).json({
       success: false,
@@ -178,8 +177,7 @@ export const executeEcoCashIn = async (req, res) => {
     senderphone,
     senderaccount,
     narration,
-    ccy,
-    subagentcode
+    ccy
   });
 
   const config = {
@@ -210,8 +208,7 @@ export const executeEcoCashIn = async (req, res) => {
           amount,
           sendername,
           senderphone,
-          senderaccount,
-          subagentCode: agent_name,
+          senderaccount
         },
       });
     }
@@ -272,7 +269,7 @@ export const executeEcoCashIn = async (req, res) => {
 };
 
 
-//Cash In
+//Cash Out n
 export const executeEcoCashOut = async (req, res) => {
   const {
     amount,

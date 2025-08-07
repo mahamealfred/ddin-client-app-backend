@@ -52,3 +52,103 @@ export const generateFDIAccessToken = async(req,res)=>{
       
       return  accesstoken
 };
+export const billercategories = {
+    "Travel": [
+        {
+            "billername": "Ethiopia Airline",
+            "billercode": "ETLINE",
+            "category": "Travel",
+            "serialNo": 1
+        }
+    ],
+    "Utilities": [
+        {
+            "billername": "Prepaid Electricity",
+            "billercode": "electricity",
+            "category": "Utilities",
+            "serialNo": 1
+        },
+        {
+            "billername": "EUCL repaid Electricity",
+            "billercode": "EUCL_ERW",
+            "category": "Utilities",
+            "serialNo": 1
+        },
+        {
+            "billername": "Startimes Paytv",
+            "billercode": "paytv",
+            "category": "Utilities",
+            "serialNo": 2
+        },
+        {
+            "billername": "PREPAID CARD LOADING",
+            "billercode": "GTP-LOAD",
+            "category": "Utilities",
+            "serialNo": 3
+        },
+        {
+            "billername": "RWANDA WATER WASAC",
+            "billercode": "RWANDA_WASAC",
+            "category": "Utilities",
+            "serialNo": 4
+        }
+    ],
+    "Government": [
+        {
+            "billername": "RWANDA REVENUE AUTHORITY",
+            "billercode": "tax",
+            "category": "Government",
+            "serialNo": 1
+        }
+    ],
+    "Donation": [
+        {
+            "billername": "Kigali Genocide Memorial",
+            "billercode": "KGL",
+            "category": "Donation",
+            "serialNo": 1
+        }
+    ],
+    "Schools": [
+        {
+            "billername": "Green Hills Academy",
+            "billercode": "GHA",
+            "category": "Schools",
+            "serialNo": 1
+        },
+        {
+            "billername": "Ecole Francophone Antoine De Saint Exupery Pr",
+            "billercode": "FRANCOPM",
+            "category": "Schools",
+            "serialNo": 2
+        },
+        {
+            "billername": "Ecole Francophone Antoine De Saint Exupery Sec",
+            "billercode": "FRANCOSM",
+            "category": "Schools",
+            "serialNo": 3
+        }
+    ],
+    "Investment": [
+        {
+            "billername": "Rwanda National Investment Trust Ltd",
+            "billercode": "RNIT",
+            "category": "Investment",
+            "serialNo": 1
+        }
+    ],
+    "Airtime": [
+        {
+            "billername": "MTN Airtime Topup",
+            "billercode": "airtime",
+            "category": "Airtime",
+            "serialNo": 1
+        },
+        {
+            "billername": "Airtel Airtime Topup",
+            "billercode": "airtime",
+            "category": "Airtime",
+            "serialNo": 2
+        }
+    ]
+};

@@ -1,6 +1,6 @@
 import express from "express";
-import { getCustomerDetails, getEcoBankAccountBalance, validateIdentity } from "../controllers/account-controller.js";
-import { executeBillerPayment, getBillerDetails, getBillers, getBillPaymentFee, postBillPayment, validateBiller, ValidateBillerFdi} from "../controllers/payment-controller.js";
+import { getCustomerDetails, getEcoBankAccountBalance, validateIdentity, validateIdentityGTBANK } from "../controllers/account-controller.js";
+import { bulkSmsPayment, executeBillerPayment, getBillerDetails, getBillerList, getBillers, getBillPaymentFee, postBillPayment, validateBiller, ValidateBillerFdi} from "../controllers/payment-controller.js";
 import { executeEcoCashIn, executeEcoCashOut, openAccount } from "../controllers/banking-controller.js";
 
 
@@ -10,7 +10,7 @@ const router = express.Router();
 
 //Account Routes
 router.get("/thirdpartyagency/services/getbalance",getEcoBankAccountBalance);
-router.post("/thirdpartyagency/services/validateidentity",validateIdentity);
+router.post("/thirdpartyagency/services/identity/verification",validateIdentityGTBANK);
 
 router.post("/thirdpartyagency/services/account-openning",openAccount);
 //Bill pyement routes
@@ -29,6 +29,9 @@ router.post("/thirdpartyagency/services/execute/bill-payment",executeBillerPayme
 router.post("/thirdpartyagency/services/getcustomerdetails",getCustomerDetails);
 router.post("/thirdpartyagency/services/execute/cash-in",executeEcoCashIn);
 router.post("/thirdpartyagency/services/execute/cash-out",executeEcoCashOut);
-
+//Get billers 
+router.get("/thirdpartyagency/services/billers/details",getBillerList);
+//Bulk -sms
+router.post("/thirdpartyagency/services/execute/bulk-sms",bulkSmsPayment);
 
 export default router

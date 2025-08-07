@@ -6865,3 +6865,92 @@
 {"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-05T11:16:31.641Z"}
 {"level":"info","message":"Received POST request to /v1/agencytest/eco/services/getcustomerdetails","service":"api-gateway","timestamp":"2025-08-05T11:17:01.379Z"}
 {"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-05T11:17:01.380Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-08-06T20:09:37.266Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:4004","service":"api-gateway","timestamp":"2025-08-06T20:09:37.272Z"}
+{"level":"info","message":"Account service is running on port http://localhost:4010","service":"api-gateway","timestamp":"2025-08-06T20:09:37.273Z"}
+{"level":"info","message":"Agency service is running on port http://localhost:4001","service":"api-gateway","timestamp":"2025-08-06T20:09:37.273Z"}
+{"level":"info","message":"Client service is running on port http://localhost:4002","service":"api-gateway","timestamp":"2025-08-06T20:09:37.274Z"}
+{"level":"info","message":"Client service is running on port http://localhost:4003","service":"api-gateway","timestamp":"2025-08-06T20:09:37.274Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-08-06T20:09:37.275Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/validate/biller","service":"api-gateway","timestamp":"2025-08-06T20:12:58.433Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-06T20:12:58.433Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/validate/biller","service":"api-gateway","timestamp":"2025-08-06T20:13:16.849Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-06T20:13:16.850Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/validate/biller","service":"api-gateway","timestamp":"2025-08-06T20:13:41.645Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-06T20:13:41.645Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/eco/services/execute/bill-payment","service":"api-gateway","timestamp":"2025-08-06T20:14:09.655Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-06T20:14:09.656Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/execute/bill-payment","service":"api-gateway","timestamp":"2025-08-06T20:14:24.345Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-06T20:14:24.346Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2025-08-06T20:14:24.355Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-08-06T20:14:57.680Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-06T20:14:57.681Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-08-06T20:14:58.696Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-08-06T21:12:22.953Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:4004","service":"api-gateway","timestamp":"2025-08-06T21:12:22.956Z"}
+{"level":"info","message":"Account service is running on port http://localhost:4010","service":"api-gateway","timestamp":"2025-08-06T21:12:22.956Z"}
+{"level":"info","message":"Agency service is running on port http://localhost:4001","service":"api-gateway","timestamp":"2025-08-06T21:12:22.956Z"}
+{"level":"info","message":"Client service is running on port http://localhost:4002","service":"api-gateway","timestamp":"2025-08-06T21:12:22.957Z"}
+{"level":"info","message":"Client service is running on port http://localhost:4003","service":"api-gateway","timestamp":"2025-08-06T21:12:22.957Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-08-06T21:12:22.957Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-08-07T07:28:12.765Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:4004","service":"api-gateway","timestamp":"2025-08-07T07:28:12.769Z"}
+{"level":"info","message":"Account service is running on port http://localhost:4010","service":"api-gateway","timestamp":"2025-08-07T07:28:12.770Z"}
+{"level":"info","message":"Agency service is running on port http://localhost:4001","service":"api-gateway","timestamp":"2025-08-07T07:28:12.770Z"}
+{"level":"info","message":"Client service is running on port http://localhost:4002","service":"api-gateway","timestamp":"2025-08-07T07:28:12.771Z"}
+{"level":"info","message":"Client service is running on port http://localhost:4003","service":"api-gateway","timestamp":"2025-08-07T07:28:12.771Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-08-07T07:28:12.772Z"}
+{"level":"info","message":"Received GET request to /v1/agencytest/thirdpartyagency/services/billers/details","service":"api-gateway","timestamp":"2025-08-07T08:11:49.027Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-08-07T08:11:49.028Z"}
+{"level":"info","message":"Received GET request to /v1/agencytest/thirdpartyagency/services/billers/details","service":"api-gateway","timestamp":"2025-08-07T08:12:29.017Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-08-07T08:12:29.018Z"}
+{"level":"info","message":"Received GET request to /v1/agencytest/thirdpartyagency/services/billers/details","service":"api-gateway","timestamp":"2025-08-07T08:59:39.226Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-08-07T08:59:39.228Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/validate/biller","service":"api-gateway","timestamp":"2025-08-07T10:29:48.269Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:29:48.271Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/validate/biller","service":"api-gateway","timestamp":"2025-08-07T10:30:41.951Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:30:41.952Z"}
+{"level":"info","message":"Received GET request to /v1/agencytest/thirdpartyagency/services/billers/details","service":"api-gateway","timestamp":"2025-08-07T10:32:54.195Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-08-07T10:32:54.196Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/getcustomerdetails","service":"api-gateway","timestamp":"2025-08-07T10:34:55.002Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:34:55.004Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/getcustomerdetails","service":"api-gateway","timestamp":"2025-08-07T10:35:10.173Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:35:10.174Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest//thirdpartyagency/services/execute/cash-in","service":"api-gateway","timestamp":"2025-08-07T10:38:00.626Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:38:00.626Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/execute/cash-in","service":"api-gateway","timestamp":"2025-08-07T10:38:08.818Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:38:08.819Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2025-08-07T10:38:08.830Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-08-07T10:38:45.753Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:38:45.753Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-08-07T10:38:46.824Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/execute/cash-in","service":"api-gateway","timestamp":"2025-08-07T10:39:11.270Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:39:11.270Z"}
+{"level":"info","message":"Response received from Test service: 400","service":"api-gateway","timestamp":"2025-08-07T10:39:11.280Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/execute/cash-in","service":"api-gateway","timestamp":"2025-08-07T10:40:04.484Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:40:04.498Z"}
+{"level":"info","message":"Response received from Test service: 200","service":"api-gateway","timestamp":"2025-08-07T10:40:05.332Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/execute/cash-in","service":"api-gateway","timestamp":"2025-08-07T10:49:46.719Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:49:46.720Z"}
+{"level":"info","message":"Response received from Test service: 200","service":"api-gateway","timestamp":"2025-08-07T10:49:47.614Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/execute/bill-payment","service":"api-gateway","timestamp":"2025-08-07T10:50:34.825Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:50:34.825Z"}
+{"level":"warn","message":"Invalid token!","service":"api-gateway","timestamp":"2025-08-07T10:50:34.828Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-08-07T10:50:45.053Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:50:45.053Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-08-07T10:50:45.820Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-08-07T10:59:41.676Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:59:41.677Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-08-07T10:59:42.396Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/eco/services/getcustomerdetails","service":"api-gateway","timestamp":"2025-08-07T10:59:57.848Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T10:59:57.848Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/getcustomerdetails","service":"api-gateway","timestamp":"2025-08-07T11:00:59.403Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T11:00:59.404Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/identity/verification","service":"api-gateway","timestamp":"2025-08-07T11:02:51.142Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T11:02:51.143Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/identity/verification","service":"api-gateway","timestamp":"2025-08-07T11:02:55.068Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T11:02:55.069Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/identity/verification","service":"api-gateway","timestamp":"2025-08-07T11:09:07.548Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T11:09:07.549Z"}
+{"level":"info","message":"Received POST request to /v1/agencytest/thirdpartyagency/services/identity/verification","service":"api-gateway","timestamp":"2025-08-07T11:09:44.717Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-08-07T11:09:44.718Z"}
