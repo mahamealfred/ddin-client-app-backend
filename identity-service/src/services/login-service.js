@@ -15,7 +15,7 @@ const loginService = async (req, res, username, password) => {
             },
         });
         const id=response.data.id
-        const { accessToken, refreshToken } = await generateTokens(username, password,token,id);
+        const { accessToken, refreshToken } = await generateTokens(token,id);
 
 
         logger.warn("Successfully logged");
@@ -32,6 +32,7 @@ const loginService = async (req, res, username, password) => {
 
         });
     } catch (error) {
+        console.log("eeoeo:",error)
         logger.error("Error while saving in Cyclos:");
         if (error.response.status === 400) {
             return res.status(400).json({

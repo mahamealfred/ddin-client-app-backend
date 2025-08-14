@@ -3497,3 +3497,326 @@
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-07T10:59:41.685Z"}
 {"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-07T10:59:41.688Z"}
 {"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-07T10:59:42.393Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-07T13:06:51.809Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-07T13:06:51.812Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-07T13:06:51.817Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-07T13:06:52.731Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-07T16:39:31.145Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T20:51:38.537Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:21:17.582Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:21:31.228Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:22:15.951Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:22:21.338Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:22:32.080Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:22:34.928Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:22:37.110Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:23:36.824Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:39:22.996Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:45:21.416Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:45:23.993Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:45:28.693Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:45:36.728Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:45:46.602Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:45:47.787Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:49:42.277Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:50:34.004Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:50:38.308Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:50:48.336Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:51:26.554Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:51:29.244Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:52:50.710Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:07.561Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:40.675Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:43.916Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:47.907Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:49.955Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:58.351Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:53:59.767Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:54:02.569Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:54:09.469Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:55:48.970Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:55:56.724Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:56:04.245Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:56:06.573Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:56:12.296Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:56:34.158Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:56:35.649Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T21:59:41.901Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:00:10.573Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:00:34.931Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:00:45.926Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:00:47.407Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:01:25.332Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:01:32.077Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:01:42.816Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:01:55.993Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:01:59.163Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:03:17.419Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-10T22:14:26.320Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:14:26.320Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:14:26.325Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-08-10T22:14:27.037Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:36:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:50:9)","timestamp":"2025-08-10T22:14:27.038Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:17:07.449Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:17:10.263Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:17:14.190Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:17:16.509Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:17:17.858Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:19:06.287Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:19:29.470Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:20:30.143Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:20:32.248Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:20:55.900Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:21:03.263Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-10T22:21:09.632Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:21:09.633Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:21:09.637Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-08-10T22:21:10.302Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:37:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:50:9)","timestamp":"2025-08-10T22:21:10.303Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:27:24.774Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-10T22:27:37.709Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:27:37.711Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:27:37.720Z"}
+{"level":"error","message":"Error while saving in Cyclos:","service":"identity-service","timestamp":"2025-08-10T22:27:38.549Z"}
+{"level":"error","message":"Login error occured Cannot read properties of undefined (reading 'status')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'status')\n    at loginService (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/services/login-service.js:37:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async loginUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:50:9)","timestamp":"2025-08-10T22:27:38.551Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:30:17.600Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-10T22:30:23.914Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:30:23.915Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:30:23.921Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-10T22:30:24.613Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:31:50.685Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:31:50.686Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:31:50.689Z"}
+{"level":"warn","message":"Invalid refresh token provided","service":"identity-service","timestamp":"2025-08-10T22:31:50.713Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:32:03.631Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:32:03.632Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:32:03.636Z"}
+{"level":"warn","message":"Invalid refresh token provided","service":"identity-service","timestamp":"2025-08-10T22:32:03.645Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:07.823Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:09.775Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:11.632Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:13.447Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:16.623Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:17.464Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:34:22.160Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:34:27.656Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:34:27.656Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:34:27.660Z"}
+{"level":"warn","message":"Invalid refresh token provided","service":"identity-service","timestamp":"2025-08-10T22:34:27.666Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:35:57.681Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:35:57.682Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:35:57.686Z"}
+{"level":"error","message":"Refresh token error occurred jwt is not defined","service":"identity-service","stack":"ReferenceError: jwt is not defined\n    at decodedToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:176:17)\n    at new Promise (<anonymous>)\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:175:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-10T22:35:57.710Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:36:37.251Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:37:17.423Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:37:20.599Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:37:26.408Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:37:30.150Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:37:40.092Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:37:40.093Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:37:40.097Z"}
+{"level":"error","message":"jwt malformed","name":"JsonWebTokenError","service":"identity-service","stack":"JsonWebTokenError: jwt malformed\n    at module.exports [as verify] (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\jsonwebtoken\\verify.js:70:17)\n    at decodedToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:179:17)\n    at new Promise (<anonymous>)\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:178:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-10T22:37:40.109Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:37:59.103Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:38:02.371Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:38:02.372Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:38:02.376Z"}
+{"level":"error","message":"jwt malformed","name":"JsonWebTokenError","service":"identity-service","stack":"JsonWebTokenError: jwt malformed\n    at module.exports [as verify] (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\jsonwebtoken\\verify.js:70:17)\n    at decodedToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:179:17)\n    at new Promise (<anonymous>)\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:178:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-10T22:38:02.389Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:45:22.458Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:45:25.719Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:45:33.085Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:45:38.579Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:45:38.580Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:45:38.592Z"}
+{"level":"error","message":"Refresh token error occurred Cannot read properties of undefined (reading 'dataValues')","service":"identity-service","stack":"TypeError: Cannot read properties of undefined (reading 'dataValues')\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:159:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-10T22:45:38.604Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:46:10.636Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:46:16.092Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:46:16.092Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:46:16.095Z"}
+{"level":"error","message":"jwt malformed","name":"JsonWebTokenError","service":"identity-service","stack":"JsonWebTokenError: jwt malformed\n    at module.exports [as verify] (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\jsonwebtoken\\verify.js:70:17)\n    at decodedToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:179:17)\n    at new Promise (<anonymous>)\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:178:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-10T22:46:16.103Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:46:34.437Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-10T22:46:36.846Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-10T22:46:46.530Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-10T22:46:46.531Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-10T22:46:46.535Z"}
+{"level":"error","message":"jwt malformed","name":"JsonWebTokenError","service":"identity-service","stack":"JsonWebTokenError: jwt malformed\n    at module.exports [as verify] (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\jsonwebtoken\\verify.js:70:17)\n    at decodedToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:179:17)\n    at new Promise (<anonymous>)\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:178:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-10T22:46:46.547Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:48:08.447Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:53:40.815Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:55:25.832Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:55:32.395Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:55:59.893Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:56:24.252Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:56:26.042Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:56:40.900Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T08:56:59.929Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-11T09:03:03.742Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:03:03.743Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:03:03.748Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-11T09:03:04.681Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:03:20.836Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:03:20.837Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:03:20.840Z"}
+{"level":"error","message":"jwt malformed","name":"JsonWebTokenError","service":"identity-service","stack":"JsonWebTokenError: jwt malformed\n    at module.exports [as verify] (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\jsonwebtoken\\verify.js:70:17)\n    at decodedToken (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:179:17)\n    at new Promise (<anonymous>)\n    at refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:178:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-08-11T09:03:20.864Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:06:36.720Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:08:24.958Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:08:28.801Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:08:32.691Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:08:34.013Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:08:41.787Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:09:14.658Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:09:14.659Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:09:14.666Z"}
+{"errors":[{"instance":{"createdAt":"2025-08-11T09:09:14.695Z","expiresAt":"2025-08-18T09:09:14.694Z","id":null,"token":"6d9c817a5c0cc6663b8c157761597e248e727389c00d55d7d4549854f7ceeccaa0730051be9be813","updatedAt":"2025-08-11T09:09:14.695Z","userAuth":"TWFoYW1lOk1haGFtZUAxMjM=","userId":58},"message":"userAuth must be unique","origin":"DB","path":"userAuth","type":"unique violation","validatorArgs":[],"validatorKey":"not_unique","validatorName":null,"value":"TWFoYW1lOk1haGFtZUAxMjM="}],"fields":{"userAuth":"TWFoYW1lOk1haGFtZUAxMjM="},"level":"error","message":"Refresh token error occurred Validation error","name":"SequelizeUniqueConstraintError","original":{"code":"ER_DUP_ENTRY","errno":1062,"parameters":["6d9c817a5c0cc6663b8c157761597e248e727389c00d55d7d4549854f7ceeccaa0730051be9be813",58,"TWFoYW1lOk1haGFtZUAxMjM=","2025-08-18 09:09:14","2025-08-11 09:09:14","2025-08-11 09:09:14"],"sql":"INSERT INTO `RefreshTokens` (`id`,`token`,`userId`,`userAuth`,`expiresAt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);","sqlMessage":"Duplicate entry 'TWFoYW1lOk1haGFtZUAxMjM=' for key 'userAuth'","sqlState":"23000"},"parent":{"code":"ER_DUP_ENTRY","errno":1062,"parameters":["6d9c817a5c0cc6663b8c157761597e248e727389c00d55d7d4549854f7ceeccaa0730051be9be813",58,"TWFoYW1lOk1haGFtZUAxMjM=","2025-08-18 09:09:14","2025-08-11 09:09:14","2025-08-11 09:09:14"],"sql":"INSERT INTO `RefreshTokens` (`id`,`token`,`userId`,`userAuth`,`expiresAt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);","sqlMessage":"Duplicate entry 'TWFoYW1lOk1haGFtZUAxMjM=' for key 'userAuth'","sqlState":"23000"},"service":"identity-service","sql":"INSERT INTO `RefreshTokens` (`id`,`token`,`userId`,`userAuth`,`expiresAt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);","stack":"Error\n    at Query.run (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async RefreshToken.create (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async generateTokens (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/utils/generateToken.js:20:3)\n    at async refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:188:13)","timestamp":"2025-08-11T09:09:14.712Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:09:33.939Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:09:39.468Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:09:39.468Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:09:39.471Z"}
+{"errors":[{"instance":{"createdAt":"2025-08-11T09:09:39.481Z","expiresAt":"2025-08-18T09:09:39.480Z","id":null,"token":"affce785175efe7956dd912adc00b9b7748450aa17c9d2ebb4b624d067de4e6b6089daee9fc8ccb3","updatedAt":"2025-08-11T09:09:39.481Z","userAuth":"TWFoYW1lOk1haGFtZUAxMjM=","userId":58},"message":"userAuth must be unique","origin":"DB","path":"userAuth","type":"unique violation","validatorArgs":[],"validatorKey":"not_unique","validatorName":null,"value":"TWFoYW1lOk1haGFtZUAxMjM="}],"fields":{"userAuth":"TWFoYW1lOk1haGFtZUAxMjM="},"level":"error","message":"Refresh token error occurred Validation error","name":"SequelizeUniqueConstraintError","original":{"code":"ER_DUP_ENTRY","errno":1062,"parameters":["affce785175efe7956dd912adc00b9b7748450aa17c9d2ebb4b624d067de4e6b6089daee9fc8ccb3",58,"TWFoYW1lOk1haGFtZUAxMjM=","2025-08-18 09:09:39","2025-08-11 09:09:39","2025-08-11 09:09:39"],"sql":"INSERT INTO `RefreshTokens` (`id`,`token`,`userId`,`userAuth`,`expiresAt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);","sqlMessage":"Duplicate entry 'TWFoYW1lOk1haGFtZUAxMjM=' for key 'userAuth'","sqlState":"23000"},"parent":{"code":"ER_DUP_ENTRY","errno":1062,"parameters":["affce785175efe7956dd912adc00b9b7748450aa17c9d2ebb4b624d067de4e6b6089daee9fc8ccb3",58,"TWFoYW1lOk1haGFtZUAxMjM=","2025-08-18 09:09:39","2025-08-11 09:09:39","2025-08-11 09:09:39"],"sql":"INSERT INTO `RefreshTokens` (`id`,`token`,`userId`,`userAuth`,`expiresAt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);","sqlMessage":"Duplicate entry 'TWFoYW1lOk1haGFtZUAxMjM=' for key 'userAuth'","sqlState":"23000"},"service":"identity-service","sql":"INSERT INTO `RefreshTokens` (`id`,`token`,`userId`,`userAuth`,`expiresAt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);","stack":"Error\n    at Query.run (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async RefreshToken.create (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async generateTokens (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/utils/generateToken.js:20:3)\n    at async refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:188:13)","timestamp":"2025-08-11T09:09:39.493Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:11:02.564Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:11:05.042Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:12:31.572Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:12:46.853Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:12:53.414Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:12:53.415Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:12:53.429Z"}
+{"errors":[{"instance":{"createdAt":"2025-08-11T09:12:53.445Z","expiresAt":"2025-08-18T09:12:53.444Z","id":null,"token":"73761abe6200c16a1c599e1d88339f29ccd2a9e2e17124907c9c3fe446a1c55399955259e7b1f21b","updatedAt":"2025-08-11T09:12:53.445Z","userAuth":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}},"message":"RefreshToken.userId cannot be null","origin":"CORE","path":"userId","type":"notNull Violation","validatorArgs":[],"validatorKey":"is_null","validatorName":null,"value":null},{"instance":{"createdAt":"2025-08-11T09:12:53.445Z","expiresAt":"2025-08-18T09:12:53.444Z","id":null,"token":"73761abe6200c16a1c599e1d88339f29ccd2a9e2e17124907c9c3fe446a1c55399955259e7b1f21b","updatedAt":"2025-08-11T09:12:53.445Z","userAuth":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}},"message":"userAuth cannot be an array or an object","origin":"CORE","path":"userAuth","type":"string violation","validatorArgs":[],"validatorKey":"not_a_string","validatorName":null,"value":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}}],"level":"error","message":"Refresh token error occurred notNull Violation: RefreshToken.userId cannot be null,\nstring violation: userAuth cannot be an array or an object","name":"SequelizeValidationError","service":"identity-service","stack":"SequelizeValidationError: notNull Violation: RefreshToken.userId cannot be null,\nstring violation: userAuth cannot be an array or an object\n    at InstanceValidator._validate (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:50:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async InstanceValidator._validateAndRunHooks (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:60:7)\n    at async InstanceValidator.validate (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:54:12)\n    at async model.save (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:2426:7)\n    at async RefreshToken.create (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async generateTokens (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/utils/generateToken.js:20:3)\n    at async refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:188:13)","timestamp":"2025-08-11T09:12:53.447Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:13:32.463Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:13:38.191Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:13:39.404Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:13:50.751Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:13:57.465Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:13:57.466Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:13:57.470Z"}
+{"errors":[{"instance":{"createdAt":"2025-08-11T09:13:57.481Z","expiresAt":"2025-08-18T09:13:57.480Z","id":null,"token":"00c8b5714c7557f837bf903a626505036f47adeaacaa040e557da01a878e358c5891edf3708d093a","updatedAt":"2025-08-11T09:13:57.481Z","userAuth":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}},"message":"RefreshToken.userId cannot be null","origin":"CORE","path":"userId","type":"notNull Violation","validatorArgs":[],"validatorKey":"is_null","validatorName":null,"value":null},{"instance":{"createdAt":"2025-08-11T09:13:57.481Z","expiresAt":"2025-08-18T09:13:57.480Z","id":null,"token":"00c8b5714c7557f837bf903a626505036f47adeaacaa040e557da01a878e358c5891edf3708d093a","updatedAt":"2025-08-11T09:13:57.481Z","userAuth":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}},"message":"userAuth cannot be an array or an object","origin":"CORE","path":"userAuth","type":"string violation","validatorArgs":[],"validatorKey":"not_a_string","validatorName":null,"value":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}}],"level":"error","message":"Refresh token error occurred notNull Violation: RefreshToken.userId cannot be null,\nstring violation: userAuth cannot be an array or an object","name":"SequelizeValidationError","service":"identity-service","stack":"SequelizeValidationError: notNull Violation: RefreshToken.userId cannot be null,\nstring violation: userAuth cannot be an array or an object\n    at InstanceValidator._validate (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:50:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async InstanceValidator._validateAndRunHooks (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:60:7)\n    at async InstanceValidator.validate (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:54:12)\n    at async model.save (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:2426:7)\n    at async RefreshToken.create (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async generateTokens (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/utils/generateToken.js:20:3)\n    at async refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:189:13)","timestamp":"2025-08-11T09:13:57.482Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:14:36.609Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:14:47.355Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:14:51.702Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:14:51.703Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:14:51.707Z"}
+{"errors":[{"instance":{"createdAt":"2025-08-11T09:14:51.721Z","expiresAt":"2025-08-18T09:14:51.720Z","id":null,"token":"e3af79aca229e0052dcafb7da08df35e0518d765eec2c6eafce32709bc61cf38f774f18979913ad0","updatedAt":"2025-08-11T09:14:51.721Z","userAuth":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}},"message":"RefreshToken.userId cannot be null","origin":"CORE","path":"userId","type":"notNull Violation","validatorArgs":[],"validatorKey":"is_null","validatorName":null,"value":null},{"instance":{"createdAt":"2025-08-11T09:14:51.721Z","expiresAt":"2025-08-18T09:14:51.720Z","id":null,"token":"e3af79aca229e0052dcafb7da08df35e0518d765eec2c6eafce32709bc61cf38f774f18979913ad0","updatedAt":"2025-08-11T09:14:51.721Z","userAuth":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}},"message":"userAuth cannot be an array or an object","origin":"CORE","path":"userAuth","type":"string violation","validatorArgs":[],"validatorKey":"not_a_string","validatorName":null,"value":{"id":58,"token":"TWFoYW1lOk1haGFtZUAxMjM="}}],"level":"error","message":"Refresh token error occurred notNull Violation: RefreshToken.userId cannot be null,\nstring violation: userAuth cannot be an array or an object","name":"SequelizeValidationError","service":"identity-service","stack":"SequelizeValidationError: notNull Violation: RefreshToken.userId cannot be null,\nstring violation: userAuth cannot be an array or an object\n    at InstanceValidator._validate (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:50:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async InstanceValidator._validateAndRunHooks (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:60:7)\n    at async InstanceValidator.validate (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\instance-validator.js:54:12)\n    at async model.save (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:2426:7)\n    at async RefreshToken.create (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\2025-projects\\client-app-micro-service\\identity-service\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async generateTokens (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/utils/generateToken.js:20:3)\n    at async refreshTokenUser (file:///C:/Users/Bwiza%20Leathitia/OneDrive/Documents/ddin-projects/2025-projects/client-app-micro-service/identity-service/src/controllers/identity-controller.js:189:13)","timestamp":"2025-08-11T09:14:51.723Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:15:26.029Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:15:28.562Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:15:34.128Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:15:42.677Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:15:44.426Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:15:44.426Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:15:44.430Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:16:45.445Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:17:14.512Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:17:20.958Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:17:29.101Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:17:29.102Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:17:29.106Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:21:25.068Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-11T09:23:28.095Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:23:28.097Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:23:28.105Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-11T09:23:28.884Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:23:49.730Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:23:49.731Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:23:49.733Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:26:33.862Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:26:33.863Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:26:33.865Z"}
+{"level":"warn","message":"Invalid refresh token provided","service":"identity-service","timestamp":"2025-08-11T09:26:33.873Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-11T09:27:10.468Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:27:10.470Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:27:10.472Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-11T09:27:11.184Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-11T09:32:38.805Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T09:32:38.807Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-11T09:32:38.810Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:36:20.987Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:36:25.756Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:36:28.403Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:46:33.389Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:46:47.758Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T09:48:11.227Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:02:05.430Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:02:45.730Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:02:54.950Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:03:01.403Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:14:32.349Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-11T10:14:52.667Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:14:52.668Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-11T10:14:52.673Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-11T10:14:53.501Z"}
+{"level":"info","message":"Received POST request to /api/accounts/all/accounts/balance","service":"identity-service","timestamp":"2025-08-11T10:16:17.746Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:16:17.747Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:17:39.464Z"}
+{"level":"info","message":"Received POST request to /api/accounts/all/balance","service":"identity-service","timestamp":"2025-08-11T10:17:48.288Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:17:48.289Z"}
+{"level":"info","message":"Received GET request to /api/accounts/all/balance","service":"identity-service","timestamp":"2025-08-11T10:18:12.508Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:18:12.510Z"}
+{"level":"info","message":"Get Account Balance endpoint hit...","service":"identity-service","timestamp":"2025-08-11T10:18:12.514Z"}
+{"level":"warn","message":"Successfully get Account Balance","service":"identity-service","timestamp":"2025-08-11T10:18:13.330Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:04.340Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:07.390Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:11.845Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:14.701Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:17.656Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:19.916Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:23.132Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:21:55.716Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:22:05.136Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:22:06.655Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:22:41.758Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:22:55.354Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:22:58.191Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:22:59.568Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:23:04.575Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:23:09.111Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:23:13.135Z"}
+{"level":"info","message":"Received GET request to /api/accounts/all/accounts/info/balance","service":"identity-service","timestamp":"2025-08-11T10:23:35.798Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:23:35.799Z"}
+{"level":"info","message":"Get Account Balance endpoint hit...","service":"identity-service","timestamp":"2025-08-11T10:23:35.809Z"}
+{"level":"info","message":"Successfully retrieved Account Balances","service":"identity-service","timestamp":"2025-08-11T10:23:36.491Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:28:11.053Z"}
+{"level":"info","message":"Received GET request to /api/accounts/all/accounts/info/balance","service":"identity-service","timestamp":"2025-08-11T10:28:15.730Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:28:15.731Z"}
+{"level":"info","message":"Get Account Balance endpoint hit...","service":"identity-service","timestamp":"2025-08-11T10:28:15.734Z"}
+{"level":"info","message":"Successfully retrieved Account Balance","service":"identity-service","timestamp":"2025-08-11T10:28:16.459Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-11T10:41:50.215Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-11T10:41:50.216Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-11T10:41:50.220Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-11T10:41:50.914Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-11T10:42:09.282Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T11:55:29.084Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T11:56:45.623Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T11:56:48.974Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T11:57:25.480Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T11:57:32.048Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T11:59:20.330Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-13T12:27:07.889Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T12:27:07.891Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-13T12:27:07.900Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-13T12:27:08.878Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-13T13:23:47.920Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T13:23:47.924Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-13T13:23:47.930Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-13T13:23:48.872Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-13T18:16:24.234Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T18:16:24.240Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-13T18:16:24.248Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-13T18:16:25.038Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-08-13T20:11:30.330Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T20:11:30.333Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-08-13T20:11:30.351Z"}
+{"level":"info","message":"Received GET request to /api/accounts/all/accounts/info/balance","service":"identity-service","timestamp":"2025-08-13T20:12:00.778Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T20:12:00.779Z"}
+{"level":"info","message":"Get Account Balance endpoint hit...","service":"identity-service","timestamp":"2025-08-13T20:12:00.784Z"}
+{"level":"info","message":"Successfully retrieved Account Balance","service":"identity-service","timestamp":"2025-08-13T20:12:01.651Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-13T20:24:55.624Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T20:24:55.624Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-13T20:24:55.626Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-13T20:24:56.339Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-13T23:16:48.591Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-13T23:16:48.591Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-13T23:16:48.593Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-13T23:16:49.373Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T23:42:00.608Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T23:42:01.899Z"}
+{"level":"info","message":"Identity service running on port 4004","service":"identity-service","timestamp":"2025-08-13T23:42:04.382Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-08-14T00:05:53.519Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-08-14T00:05:53.521Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-08-14T00:05:53.528Z"}
+{"level":"warn","message":"Successfully logged","service":"identity-service","timestamp":"2025-08-14T00:05:54.275Z"}

@@ -3,9 +3,10 @@ import crypto from 'crypto';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
 import CryptoJS from 'crypto-js';
-import { billercategories, generateFDIAccessToken, generateRequestId } from '../utils/helper.js';
+import { billercategories, generate20DigitToken, generateFDIAccessToken, generateRequestId } from '../utils/helper.js';
 import jwt from "jsonwebtoken";
 import { buildAirtimePayload, buildElecticityPayload, buildGenericBillerPayload, buildRRABillerPayload, buildStartimePayload } from '../utils/payloadBuilder.js';
+import { insertLogs } from '../utils/logsData.js';
 
 dotenv.config();
 
@@ -18,95 +19,95 @@ const SOURCE_CODE = 'DDIN';
 
 
 export const postBillPayment = async (req, res) => {
-    const {
-        email,
-        customerNumber,
-        billerCode,
-        productCode,
-        amount,
-        ccy,
-        subagent,
-    } = req.body;
+  const {
+    email,
+    customerNumber,
+    billerCode,
+    productCode,
+    amount,
+    ccy,
+    subagent,
+  } = req.body;
 
-    if (!email || !customerNumber || !billerCode || !productCode || !amount) {
-        logger.warn('Missing required fields for bill payment', req.body);
-        return res.status(400).json({
-            success: false,
-            message: 'Missing required fields: email, customerNumber, billerCode, productCode, amount',
-        });
+  if (!email || !customerNumber || !billerCode || !productCode || !amount) {
+    logger.warn('Missing required fields for bill payment', req.body);
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required fields: email, customerNumber, billerCode, productCode, amount',
+    });
+  }
+
+  const sourceIp = '192.168.0.237';
+  const requestId = generateRequestId(); // Must be 16-char alphanumeric
+  const amountFormatted = parseFloat(amount).toFixed(2);
+
+  const requestTokenString = `${AFFCODE}${requestId}${AGENT_CODE}${SOURCE_CODE}${sourceIp}`;
+  const requestToken = crypto.createHash('sha512').update(requestTokenString).digest('hex');;
+  const tokenString = sourceIp + requestId + AGENT_CODE + ccy + billerCode + amountFormatted + PIN;
+  const transactionToken = CryptoJS.SHA512(tokenString).toString();
+
+  const header = {
+    affcode: AFFCODE,
+    requestId,
+    agentcode: AGENT_CODE,
+    requesttype: 'VALIDATE',
+    sourceIp,
+    sourceCode: SOURCE_CODE,
+    channel: 'API',
+    requestToken,
+  };
+
+  const payload = {
+    formData: [
+      { fieldName: 'EMAIL', fieldValue: email },
+      { fieldName: 'Customer No/Smart Card No', fieldValue: customerNumber },
+    ],
+    billerCode,
+    productCode,
+    amount: amountFormatted,
+    ccy,
+    subagent,
+    transactiontoken: transactionToken,
+    header,
+  };
+
+  const config = {
+    method: 'post',
+    url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/postbillpayment',
+    headers: { 'Content-Type': 'application/json' },
+    data: payload,
+  };
+
+  try {
+    const response = await axios.request(config);
+    const responseData = response.data;
+
+    logger.info('Bill payment response:', responseData);
+
+    if (responseData?.header?.responsecode === '000') {
+      return res.status(200).json({
+        success: true,
+        message: 'Bill payment successful',
+        data: responseData,
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: responseData?.header?.responsemessage || 'Unknown error',
+        code: responseData?.header?.responsecode,
+      });
     }
+  } catch (error) {
+    logger.error('Bill payment failed', {
+      error: error?.response?.data || error.message,
+    });
 
-    const sourceIp = '192.168.0.237';
-    const requestId = generateRequestId(); // Must be 16-char alphanumeric
-    const amountFormatted = parseFloat(amount).toFixed(2);
-
-    const requestTokenString = `${AFFCODE}${requestId}${AGENT_CODE}${SOURCE_CODE}${sourceIp}`;
-    const requestToken = crypto.createHash('sha512').update(requestTokenString).digest('hex');;
-    const tokenString = sourceIp + requestId + AGENT_CODE + ccy + billerCode + amountFormatted + PIN;
-    const transactionToken = CryptoJS.SHA512(tokenString).toString();
-
-    const header = {
-        affcode: AFFCODE,
-        requestId,
-        agentcode: AGENT_CODE,
-        requesttype: 'VALIDATE',
-        sourceIp,
-        sourceCode: SOURCE_CODE,
-        channel: 'API',
-        requestToken,
-    };
-
-    const payload = {
-        formData: [
-            { fieldName: 'EMAIL', fieldValue: email },
-            { fieldName: 'Customer No/Smart Card No', fieldValue: customerNumber },
-        ],
-        billerCode,
-        productCode,
-        amount: amountFormatted,
-        ccy,
-        subagent,
-        transactiontoken: transactionToken,
-        header,
-    };
-
-    const config = {
-        method: 'post',
-        url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/postbillpayment',
-        headers: { 'Content-Type': 'application/json' },
-        data: payload,
-    };
-
-    try {
-        const response = await axios.request(config);
-        const responseData = response.data;
-
-        logger.info('Bill payment response:', responseData);
-
-        if (responseData?.header?.responsecode === '000') {
-            return res.status(200).json({
-                success: true,
-                message: 'Bill payment successful',
-                data: responseData,
-            });
-        } else {
-            return res.status(400).json({
-                success: false,
-                message: responseData?.header?.responsemessage || 'Unknown error',
-                code: responseData?.header?.responsecode,
-            });
-        }
-    } catch (error) {
-        logger.error('Bill payment failed', {
-            error: error?.response?.data || error.message,
-        });
-
-        return res.status(500).json({
-            success: false,
-            message: 'Internal server error',
-            error: error?.response?.data || error.message,
-        });
-    }
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: error?.response?.data || error.message,
+    });
+  }
 };
 
 
@@ -114,107 +115,107 @@ export const postBillPayment = async (req, res) => {
 
 // Validate Bill Payment
 export const validateBiller = async (req, res) => {
-    const { billerCode, customerId, amount } = req.body;
+  const { billerCode, customerId, amount } = req.body;
 
-    if (!billerCode  || !customerId) {
-        logger.warn('Missing required fields', { billerCode, productCode, customerId });
-        return res.status(400).json({
-            success: false,
-            message: 'Missing required fields: billerCode, productCode, or customerId',
-        });
+  if (!billerCode || !customerId) {
+    logger.warn('Missing required fields', { billerCode, productCode, customerId });
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required fields: billerCode, productCode, or customerId',
+    });
+  }
+
+  const header = {
+    sourceCode: 'DDIN',
+    affcode: 'ERW',
+    requestId: 'A' + Date.now(),
+    agentcode: AGENT_CODE,
+    requesttype: 'VALIDATE',
+    sourceIp: '10.8.245.9',
+    channel: 'API',
+  };
+
+  const tokenString =
+    header.affcode +
+    header.requestId +
+    header.agentcode +
+    header.sourceCode +
+    header.sourceIp;
+
+  const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
+  header.requestToken = requestToken;
+
+  const payload = {
+    formData: [
+      {
+        fieldName: 'EMAIL',
+        fieldValue: '', // Can be made dynamic if needed
+      },
+      {
+        fieldName: 'CUSTOMERID',
+        fieldValue: customerId,
+      },
+      {
+        fieldName: 'LAST4DIGITS',
+        fieldValue: '9909', // Also can be dynamic if needed
+      },
+    ],
+    billerCode,
+    productCode: billerCode,
+    amount: amount, // Make dynamic if needed
+    header,
+  };
+
+  const config = {
+    method: 'post',
+    url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/validatebillpayment',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: payload,
+  };
+
+  try {
+    const response = await axios.request(config);
+    const responseData = response.data;
+
+    logger.info('Bill payment validation response', { responseData });
+
+    if (responseData?.header?.responsecode === '000') {
+      return res.status(200).json({
+        success: true,
+        message: 'Bill payment validated successfully',
+        data: responseData,
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: responseData?.header?.responsemessage,
+        code: responseData?.header?.responsecode,
+      });
     }
-
-    const header = {
-        sourceCode: 'DDIN',
-        affcode: 'ERW',
-        requestId: 'A' + Date.now(),
-        agentcode: AGENT_CODE,
-        requesttype: 'VALIDATE',
-        sourceIp: '10.8.245.9',
-        channel: 'API',
-    };
-
-    const tokenString =
-        header.affcode +
-        header.requestId +
-        header.agentcode +
-        header.sourceCode +
-        header.sourceIp;
-
-    const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
-    header.requestToken = requestToken;
-
-    const payload = {
-        formData: [
-            {
-                fieldName: 'EMAIL',
-                fieldValue: '', // Can be made dynamic if needed
-            },
-            {
-                fieldName: 'CUSTOMERID',
-                fieldValue: customerId,
-            },
-            {
-                fieldName: 'LAST4DIGITS',
-                fieldValue: '9909', // Also can be dynamic if needed
-            },
-        ],
-        billerCode,
-        productCode:billerCode,
-        amount: amount, // Make dynamic if needed
-        header,
-    };
-
-    const config = {
-        method: 'post',
-        url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/validatebillpayment',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        data: payload,
-    };
-
-    try {
-        const response = await axios.request(config);
-        const responseData = response.data;
-
-        logger.info('Bill payment validation response', { responseData });
-
-        if (responseData?.header?.responsecode === '000') {
-            return res.status(200).json({
-                success: true,
-                message: 'Bill payment validated successfully',
-                data: responseData,
-            });
-        } else {
-            return res.status(400).json({
-                success: false,
-                message: responseData?.header?.responsemessage,
-                code: responseData?.header?.responsecode,
-            });
-        }
-    } catch (error) {
-        logger.error('Bill payment validation failed', {
-            error: error?.response?.data || error.message,
-        });
-        return res.status(500).json({
-            success: false,
-            message: 'Internal server error',
-            error: error?.response?.data || error.message,
-        });
-    }
+  } catch (error) {
+    logger.error('Bill payment validation failed', {
+      error: error?.response?.data || error.message,
+    });
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: error?.response?.data || error.message,
+    });
+  }
 };
 // Falidate biller from FDI 
-export const ValidateBillerFdi=async(req, res)=> {
-  const { billerCode,productCode, customerId, amount } = req.body;
+export const ValidateBillerFdi = async (req, res) => {
+  const { billerCode, productCode, customerId, amount } = req.body;
 
-    if (!billerCode  || !productCode || !customerId) {
-        logger.warn('Missing required fields', { billerCode, productCode, customerId });
-        return res.status(400).json({
-            success: false,
-            message: 'Missing required fields: billerCode, productCode, or customerId',
-        });
-    }
+  if (!billerCode || !productCode || !customerId) {
+    logger.warn('Missing required fields', { billerCode, productCode, customerId });
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required fields: billerCode, productCode, or customerId',
+    });
+  }
 
 
   let accessToken;
@@ -239,7 +240,7 @@ export const ValidateBillerFdi=async(req, res)=> {
 
   const payload = {
     verticalId: billerCode,
-    customerAccountNumber:customerId,
+    customerAccountNumber: customerId,
   };
 
   const config = {
@@ -267,7 +268,7 @@ export const ValidateBillerFdi=async(req, res)=> {
           customerId: customerId,
           customerName: responseData.data.customerAccountName,
           requestId: responseData.data.trxId,
-        
+
         },
       });
     }
@@ -277,7 +278,7 @@ export const ValidateBillerFdi=async(req, res)=> {
       message: "Unable to complete your transaction at this time. Please try again later.",
     });
   } catch (error) {
-    console.log("error:",error)
+    console.log("error:", error)
     const status = error?.response?.status;
     const errorMessage = error?.response?.data?.msg || error.message;
 
@@ -307,7 +308,6 @@ export const ValidateBillerFdi=async(req, res)=> {
     });
   }
 }
-//BILLER PAYEMENT FOR 
 export const executeBillerPayment = async (req, res) => {
   const {
     amount,
@@ -321,18 +321,18 @@ export const executeBillerPayment = async (req, res) => {
   } = req.body;
 
   if (!amount || !requestId || !ccy || !billerCode || !productCode) {
-    logger.warn('Missing required fields in biller payment request', req.body);
+    logger.warn("Missing required fields in biller payment request", req.body);
     return res.status(400).json({
       success: false,
       message:
-        'Missing required fields: amount, requestId, ccy, billerCode, and productCode are all required.',
+        "Missing required fields: amount, requestId, ccy, billerCode, and productCode are all required.",
     });
   }
 
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
-  let agent_name = 'UnknownAgent';
+  let agent_name = "UnknownAgent";
   let userAuth = null;
 
   try {
@@ -345,46 +345,46 @@ export const executeBillerPayment = async (req, res) => {
     agent_name = decodedToken.id;
     userAuth = decodedToken.userAuth;
   } catch (err) {
-    logger.warn('Invalid token', { error: err.message });
+    logger.warn("Invalid token", { error: err.message });
     return res.status(401).json({
       success: false,
-      message: 'Invalid or expired token. Please log in again.',
+      message: "Invalid or expired token. Please log in again.",
     });
   }
 
   if (!process.env.CORE_URL) {
-    logger.error('CORE_URL is not defined in environment variables');
+    logger.error("CORE_URL is not defined in environment variables");
     return res.status(500).json({
       success: false,
       message:
-        'A configuration error occurred. Please contact support or try again later.',
+        "A configuration error occurred. Please contact support or try again later.",
     });
   }
 
-const payload =
-  billerCode.toLowerCase() === 'airtime'
-    ? buildAirtimePayload({ amount, requestId, ccy, customerId, clientPhone })
-    : billerCode.toLowerCase() === 'electricity'
-    ? buildElecticityPayload({ amount, requestId, ccy, customerId, clientPhone })
-    : billerCode.toLowerCase() === 'paytv'
-    ? buildStartimePayload({ amount, requestId, ccy, customerId, clientPhone })
-     : billerCode.toLowerCase() === 'tax'
-    ? buildRRABillerPayload({ amount, requestId, ccy, customerId, clientPhone })
-    : buildGenericBillerPayload({
-        amount,
-        requestId,
-        ccy,
-        customerId,
-        clientPhone,
-        billerCode,
-      });
+  const payload =
+    billerCode.toLowerCase() === "airtime"
+      ? buildAirtimePayload({ amount, requestId, ccy, customerId, clientPhone })
+      : billerCode.toLowerCase() === "electricity"
+      ? buildElecticityPayload({ amount, requestId, ccy, customerId, clientPhone })
+      : billerCode.toLowerCase() === "paytv"
+      ? buildStartimePayload({ amount, requestId, ccy, customerId, clientPhone })
+      : billerCode.toLowerCase() === "tax"
+      ? buildRRABillerPayload({ amount, requestId, ccy, customerId, clientPhone })
+      : buildGenericBillerPayload({
+          amount,
+          requestId,
+          ccy,
+          customerId,
+          clientPhone,
+          billerCode,
+        });
 
   const config = {
-    method: 'post',
+    method: "post",
     maxBodyLength: Infinity,
     url: `${process.env.CORE_URL}/rest/payments/confirmMemberPayment`,
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
       Authorization: `Basic ${userAuth}`,
     },
     data: JSON.stringify(payload),
@@ -393,68 +393,112 @@ const payload =
   try {
     const response = await axios.request(config);
 
-    logger.info('Biller payment response from core system', {
+    logger.info("Biller payment response from core system", {
       status: response.status,
       data: response.data,
     });
 
     if (response.status === 200) {
+      // Generate token if electricity
+      const electricityToken =
+        billerCode.toLowerCase() === "electricity"
+          ? generate20DigitToken()
+          : null;
+
+      // Save log to DB
+      await insertLogs(
+        response.data.id,            // transactionId
+        "SUCCESS",                   // thirdpart_status
+        "Payment processed",         // description
+        amount,                      // amount
+        agent_name,                  // agent_name
+        "Complete",                  // status
+        billerCode,                   // service_name
+        requestId,                   // trxId
+        customerId,                  // customerId
+        electricityToken             // token
+      );
+
       return res.status(200).json({
         success: true,
-        message: 'Your payment was successful.',
+        message: "Your payment was successful.",
         data: {
           transactionId: response.data.id,
           requestId,
           amount,
           subagentCode: agent_name,
+          token: electricityToken,
         },
       });
     }
 
+    // Log failed payment
+    await insertLogs(
+      null,                          // transactionId
+      "FAILED",                      // thirdpart_status
+      "Unexpected response from core", // description
+      amount,
+      agent_name,
+      "Failed",
+      billerCode,
+      requestId,
+      customerId,
+      null
+    );
+
     return res.status(502).json({
       success: false,
       message:
-        'Unexpected response from the payment server. Please try again later.',
+        "Unexpected response from the payment server. Please try again later.",
     });
   } catch (error) {
     const status = error?.response?.status;
     const errorDetails = error?.response?.data?.errorDetails;
     const coreError = error?.response?.data;
 
-    logger.error('Biller payment failed', {
+    logger.error("Biller payment failed", {
       status,
       errorDetails,
       coreError,
     });
 
-    if (status === 400) {
-      let message = 'Unable to process payment due to invalid request.';
+    // Always log failed attempt
+    await insertLogs(
+      null,
+      "FAILED",
+      coreError ? JSON.stringify(coreError) : error.message,
+      amount,
+      agent_name,
+      "Failed",
+      billerCode,
+      requestId,
+      customerId,
+      null
+    );
 
-      if (errorDetails === 'INVALID_TRANSACTION_PASSWORD') {
-        message = 'Your transaction password is incorrect. Please try again.';
-      } else if (errorDetails === 'BLOCKED_TRANSACTION_PASSWORD') {
+    if (status === 400) {
+      let message = "Unable to process payment due to invalid request.";
+
+      if (errorDetails === "INVALID_TRANSACTION_PASSWORD") {
+        message = "Your transaction password is incorrect. Please try again.";
+      } else if (errorDetails === "BLOCKED_TRANSACTION_PASSWORD") {
         message =
-          'Your transaction password has been blocked. Please contact support.';
+          "Your transaction password has been blocked. Please contact support.";
       }
 
-      return res.status(400).json({
-        success: false,
-        message,
-      });
+      return res.status(400).json({ success: false, message });
     }
 
     if (status === 401) {
-      return res.status(401).json({
-        success: false,
-        message: 'Authentication failed. Please check your credentials.',
-      });
+      return res
+        .status(401)
+        .json({ success: false, message: "Authentication failed." });
     }
 
     if (status === 404) {
-      return res.status(404).json({
-        success: false,
-        message: 'Account not found. Please verify the recipient account.',
-      });
+      return res
+        .status(404)
+        .json({ success: false, message: "Account not found." });
     }
 
     return res.status(500).json({
@@ -467,269 +511,269 @@ const payload =
 };
 // Get Biller Details
 export const getBillerDetails = async (req, res) => {
-    const { billerCode } = req.body;
+  const { billerCode } = req.body;
 
-    if (!billerCode) {
-        logger.warn('Missing billerCode in request body');
-        return res.status(400).json({
-            success: false,
-            message: 'Missing required field: billerCode',
-        });
+  if (!billerCode) {
+    logger.warn('Missing billerCode in request body');
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required field: billerCode',
+    });
+  }
+
+  const header = {
+    sourceCode: 'DDIN',
+    affcode: 'ERW',
+    requestId: 'A' + Date.now(),
+    agentcode: AGENT_CODE,
+    requesttype: 'VALIDATE',
+    sourceIp: '10.8.245.9',
+    channel: 'API',
+  };
+
+  const tokenString =
+    header.affcode +
+    header.requestId +
+    header.agentcode +
+    header.sourceCode +
+    header.sourceIp;
+
+  const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
+  header.requestToken = requestToken;
+
+  const payload = {
+    billercode: billerCode,
+    header,
+  };
+
+  const config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/getbillerdetails',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: payload,
+  };
+
+  try {
+    const response = await axios.request(config);
+    const responseData = response.data;
+
+    logger.info('Biller details fetched successfully', { responseData });
+
+    if (responseData?.header?.responsecode === '000') {
+      return res.status(200).json({
+        success: true,
+        message: 'Biller details retrieved successfully',
+        data: responseData,
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: responseData?.header?.responsemessage,
+        code: responseData?.header?.responsecode,
+      });
     }
+  } catch (error) {
+    logger.error('Failed to fetch biller details', {
+      error: error?.response?.data || error.message,
+    });
 
-    const header = {
-        sourceCode: 'DDIN',
-        affcode: 'ERW',
-        requestId: 'A' + Date.now(),
-        agentcode: AGENT_CODE,
-        requesttype: 'VALIDATE',
-        sourceIp: '10.8.245.9',
-        channel: 'API',
-    };
-
-    const tokenString =
-        header.affcode +
-        header.requestId +
-        header.agentcode +
-        header.sourceCode +
-        header.sourceIp;
-
-    const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
-    header.requestToken = requestToken;
-
-    const payload = {
-        billercode: billerCode,
-        header,
-    };
-
-    const config = {
-        method: 'post',
-        maxBodyLength: Infinity,
-        url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/getbillerdetails',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        data: payload,
-    };
-
-    try {
-        const response = await axios.request(config);
-        const responseData = response.data;
-
-        logger.info('Biller details fetched successfully', { responseData });
-
-        if (responseData?.header?.responsecode === '000') {
-            return res.status(200).json({
-                success: true,
-                message: 'Biller details retrieved successfully',
-                data: responseData,
-            });
-        } else {
-            return res.status(400).json({
-                success: false,
-                message: responseData?.header?.responsemessage,
-                code: responseData?.header?.responsecode,
-            });
-        }
-    } catch (error) {
-        logger.error('Failed to fetch biller details', {
-            error: error?.response?.data || error.message,
-        });
-
-        return res.status(500).json({
-            success: false,
-            message: 'Internal server error',
-            error: error?.response?.data || error.message,
-        });
-    }
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: error?.response?.data || error.message,
+    });
+  }
 };
 
 // Get List of Agent Billers
 export const getBillers = async (req, res) => {
-    const header = {
-        sourceCode: 'DDIN',
-        affcode: 'ERW',
-        requestId: 'A' + Date.now(),
-        agentcode: AGENT_CODE,
-        requesttype: 'VALIDATE',
-        sourceIp: '10.8.245.9',
-        channel: 'API',
-    };
+  const header = {
+    sourceCode: 'DDIN',
+    affcode: 'ERW',
+    requestId: 'A' + Date.now(),
+    agentcode: AGENT_CODE,
+    requesttype: 'VALIDATE',
+    sourceIp: '10.8.245.9',
+    channel: 'API',
+  };
 
-    const tokenString =
-        header.affcode +
-        header.requestId +
-        header.agentcode +
-        header.sourceCode +
-        header.sourceIp;
+  const tokenString =
+    header.affcode +
+    header.requestId +
+    header.agentcode +
+    header.sourceCode +
+    header.sourceIp;
 
-    const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
-    header.requestToken = requestToken;
+  const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
+  header.requestToken = requestToken;
 
-    const payload = { header };
+  const payload = { header };
 
-    const config = {
-        method: 'post',
-        maxBodyLength: Infinity,
-        url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/agentbillers',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        data: payload,
-    };
+  const config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/agentbillers',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: payload,
+  };
 
-    try {
-        const response = await axios.request(config);
-        const responseData = response.data;
+  try {
+    const response = await axios.request(config);
+    const responseData = response.data;
 
-        logger.info('Fetched agent billers', { responseData });
+    logger.info('Fetched agent billers', { responseData });
 
-        if (responseData?.header?.responsecode === '000') {
-            return res.status(200).json({
-                success: true,
-                message: 'Billers fetched successfully',
-                data: responseData,
-            });
-        } else {
-            return res.status(400).json({
-                success: false,
-                message: responseData?.header?.responsemessage,
-                code: responseData?.header?.responsecode,
-            });
-        }
-    } catch (error) {
-        logger.error('Failed to fetch agent billers', {
-            error: error?.response?.data || error.message,
-        });
-
-        return res.status(500).json({
-            success: false,
-            message: 'Internal server error',
-            error: error?.response?.data || error.message,
-        });
+    if (responseData?.header?.responsecode === '000') {
+      return res.status(200).json({
+        success: true,
+        message: 'Billers fetched successfully',
+        data: responseData,
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: responseData?.header?.responsemessage,
+        code: responseData?.header?.responsecode,
+      });
     }
+  } catch (error) {
+    logger.error('Failed to fetch agent billers', {
+      error: error?.response?.data || error.message,
+    });
+
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: error?.response?.data || error.message,
+    });
+  }
 };
 
 
 // Get Bill Payment Fee
 export const getBillPaymentFee = async (req, res) => {
-    const { billerCode, amount } = req.body;
+  const { billerCode, amount } = req.body;
 
-    if (!billerCode || !amount) {
-        logger.warn('Missing billerCode or amount in request body', { billerCode, amount });
-        return res.status(400).json({
-            success: false,
-            message: 'Missing required fields: billerCode or amount',
-        });
+  if (!billerCode || !amount) {
+    logger.warn('Missing billerCode or amount in request body', { billerCode, amount });
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required fields: billerCode or amount',
+    });
+  }
+
+  const header = {
+    sourceCode: 'DDIN',
+    affcode: 'ERW',
+    requestId: 'A' + Date.now(),
+    agentcode: AGENT_CODE,
+    requesttype: 'VALIDATE',
+    sourceIp: '10.8.245.9',
+    channel: 'API',
+  };
+
+  const tokenString =
+    header.affcode +
+    header.requestId +
+    header.agentcode +
+    header.sourceCode +
+    header.sourceIp;
+
+  const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
+  header.requestToken = requestToken;
+
+  const payload = {
+    billercode: billerCode,
+    amount,
+    header,
+  };
+
+  const config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/getbillpaymentfee',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: payload,
+  };
+
+  try {
+    const response = await axios.request(config);
+    const responseData = response.data;
+
+    logger.info('Fetched bill payment fee', { responseData });
+
+    if (responseData?.header?.responsecode === '000') {
+      return res.status(200).json({
+        success: true,
+        message: 'Payment fee retrieved successfully',
+        data: responseData,
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: responseData?.header?.responsemessage,
+        code: responseData?.header?.responsecode,
+      });
     }
+  } catch (error) {
+    logger.error('Failed to fetch bill payment fee', {
+      error: error?.response?.data || error.message,
+    });
 
-    const header = {
-        sourceCode: 'DDIN',
-        affcode: 'ERW',
-        requestId: 'A' + Date.now(),
-        agentcode: AGENT_CODE,
-        requesttype: 'VALIDATE',
-        sourceIp: '10.8.245.9',
-        channel: 'API',
-    };
-
-    const tokenString =
-        header.affcode +
-        header.requestId +
-        header.agentcode +
-        header.sourceCode +
-        header.sourceIp;
-
-    const requestToken = crypto.createHash('sha512').update(tokenString).digest('hex');
-    header.requestToken = requestToken;
-
-    const payload = {
-        billercode: billerCode,
-        amount,
-        header,
-    };
-
-    const config = {
-        method: 'post',
-        maxBodyLength: Infinity,
-        url: 'https://mule.ecobank.com/agencybanking/services/thirdpartyagencybanking/getbillpaymentfee',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        data: payload,
-    };
-
-    try {
-        const response = await axios.request(config);
-        const responseData = response.data;
-
-        logger.info('Fetched bill payment fee', { responseData });
-
-        if (responseData?.header?.responsecode === '000') {
-            return res.status(200).json({
-                success: true,
-                message: 'Payment fee retrieved successfully',
-                data: responseData,
-            });
-        } else {
-            return res.status(400).json({
-                success: false,
-                message: responseData?.header?.responsemessage,
-                code: responseData?.header?.responsecode,
-            });
-        }
-    } catch (error) {
-        logger.error('Failed to fetch bill payment fee', {
-            error: error?.response?.data || error.message,
-        });
-
-        return res.status(500).json({
-            success: false,
-            message: 'Internal server error',
-            error: error?.response?.data || error.message,
-        });
-    }
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: error?.response?.data || error.message,
+    });
+  }
 };
 
 //Get billers
 export const getBillerList = async (req, res) => {
-    try {
-        const { category } = req.query;
+  try {
+    const { category } = req.query;
 
-        let billers = [];
+    let billers = [];
 
-        if (category) {
-            if (billercategories[category]) {
-                billers = billercategories[category];
-            } else {
-                return res.status(404).json({
-                    success: false,
-                    message: `Category "${category}" not found`,
-                });
-            }
-        } else {
-            // Flatten all billers into one array
-            for (const key in billercategories) {
-                billers = billers.concat(billercategories[key]);
-            }
-        }
-
-        return res.status(200).json({
-            success: true,
-            message: 'Biller list retrieved successfully',
-            data: billers,
+    if (category) {
+      if (billercategories[category]) {
+        billers = billercategories[category];
+      } else {
+        return res.status(404).json({
+          success: false,
+          message: `Category "${category}" not found`,
         });
-    } catch (error) {
-        logger.error('Failed to fetch biller list', {
-            error: error?.message,
-        });
-
-        return res.status(500).json({
-            success: false,
-            message: 'Internal server error',
-            error: error?.message,
-        });
+      }
+    } else {
+      // Flatten all billers into one array
+      for (const key in billercategories) {
+        billers = billers.concat(billercategories[key]);
+      }
     }
+
+    return res.status(200).json({
+      success: true,
+      message: 'Biller list retrieved successfully',
+      data: billers,
+    });
+  } catch (error) {
+    logger.error('Failed to fetch biller list', {
+      error: error?.message,
+    });
+
+    return res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: error?.message,
+    });
+  }
 };
 //bulk sms
 export const bulkSmsPayment = async (req, res) => {
@@ -755,8 +799,8 @@ export const bulkSmsPayment = async (req, res) => {
 
   let agent_name = 'UnknownAgent';
   let userAuth = null;
-let total_amount=0
-total_amount=15*recipients.length
+  let total_amount = 0
+  total_amount = 15 * recipients.length
   try {
     const decodedToken = await new Promise((resolve, reject) =>
       jwt.verify(token, process.env.JWT_SECRET, (err, user) =>
@@ -783,11 +827,11 @@ total_amount=15*recipients.length
   }
 
   const payload = {
-    toMemberId:"142",
+    toMemberId: "142",
     amount: `${total_amount}`,
-    transferTypeId:"121",
-    currencySymbol:ccy,
-    description:"Bulk SMS Payment",
+    transferTypeId: "121",
+    currencySymbol: ccy,
+    description: "Bulk SMS Payment",
   };
 
   const config = {
@@ -819,12 +863,12 @@ total_amount=15*recipients.length
         message: 'Bulk SMS payment completed successfully.',
         data: {
           transactionId: response.data.id,
-          total_amount:total_amount,
-          total_recipients:recipients.length,
+          total_amount: total_amount,
+          total_recipients: recipients.length,
           senderId,
           smsMessage,
-        //  service: 'Bulk SMS',
-         // agent: agent_name,
+          //  service: 'Bulk SMS',
+          // agent: agent_name,
           //timestamp: new Date().toISOString(),
         },
       });

@@ -17,6 +17,13 @@ export const generateRequestToken=(AFFCODE,requestId,AGENT_CODE,SOURCE_CODE,sour
   return requestToken;
 }
 
+export const generate20DigitToken=() =>{
+  let token = '';
+  for (let i = 0; i < 20; i++) {
+    token += Math.floor(Math.random() * 10);
+  }
+  return token;
+}
 
 export const generateFDIAccessToken = async(req,res)=>{
     let data = JSON.stringify({

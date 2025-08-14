@@ -11,6 +11,8 @@ import Redis from "ioredis";
 import errorHandler from "./middleware/errorHandler.js";
 import routes from "./routes/identity-service.js";
 import accountRoutes from "./routes/account-service.js";
+import sequelize from "./db/config.js";
+
 dotenv.config()
 
 
@@ -77,6 +79,7 @@ app.use(errorHandler);
 
 
 app.listen(PORT, () => {
+  sequelize
     logger.info(`Identity service running on port ${PORT}`);
 })
 

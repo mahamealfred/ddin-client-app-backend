@@ -1,12 +1,11 @@
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
+import RefreshToken from "../models/RefreshToken.js";
 //import RefreshToken from "../models/RefreshToken.js";
 
-const generateTokens = async (username,email,token,id) => {
+const generateTokens = async (token,id) => {
   const accessToken = jwt.sign(
     {
-      email: email,
-      username: username,
       userAuth:token,
       id:id
     },
@@ -18,11 +17,12 @@ const generateTokens = async (username,email,token,id) => {
   const expiresAt = new Date();
   expiresAt.setDate(expiresAt.getDate() + 7); // refresh token expires in 7 days
 
-//   await RefreshToken.create({
-//     token: refreshToken,
-//     user: user._id,
-//     expiresAt,
-//   });
+  await RefreshToken.create({
+    token: refreshToken,
+    userId: id,
+    userAuth:token,
+    expiresAt,
+  });
 
   return { accessToken, refreshToken };
 };

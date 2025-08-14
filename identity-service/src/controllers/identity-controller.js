@@ -4,6 +4,10 @@ import generateTokens from "../utils/generateToken.js";
 import { validatelogin, validateRegistration } from "../utils/validation.js";
 import { registerService } from "../services/register-service.js";
 import { loginService } from "../services/login-service.js";
+import RefreshToken from "../models/RefreshToken.js";
+import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+dotenv.config()
 
 
 //user registration
@@ -134,11 +138,12 @@ const findUser = async (req, res) => {
     }
 };
 
-//refresh token
+// refresh token
 const refreshTokenUser = async (req, res) => {
     logger.info("Refresh token endpoint hit...");
     try {
         const { refreshToken } = req.body;
+
         if (!refreshToken) {
             logger.warn("Refresh token missing");
             return res.status(400).json({
@@ -147,7 +152,11 @@ const refreshTokenUser = async (req, res) => {
             });
         }
 
-        const storedToken = await RefreshToken.findOne({ token: refreshToken });
+        // Sequelize findOne
+        const storedToken = await RefreshToken.findOne({
+            where: { token: refreshToken },
+        });
+
 
         if (!storedToken) {
             logger.warn("Invalid refresh token provided");
@@ -157,44 +166,53 @@ const refreshTokenUser = async (req, res) => {
             });
         }
 
-        if (!storedToken || storedToken.expiresAt < new Date()) {
-            logger.warn("Invalid or expired refresh token");
-
+        if (storedToken.expiresAt < new Date()) {
+            logger.warn("Expired refresh token");
             return res.status(401).json({
                 success: false,
-                message: `Invalid or expired refresh token`,
+                message: "Expired refresh token",
             });
         }
 
-        const user = await User.findById(storedToken.user);
+        // Verify the token (use storedToken.token, not the whole object)
+        // const decodedToken = await new Promise((resolve, reject) =>
+        //     jwt.verify(storedToken.token, process.env.JWT_SECRET, (err, user) =>
+        //         err ? reject(err) : resolve(user)
+        //     )
+        // );
+      const token=storedToken.userAuth
+      const id=storedToken.userId
 
-        if (!user) {
-            logger.warn("User not found");
+        // Generate new tokens
+        const {
+            accessToken: newAccessToken,
+            refreshToken: newRefreshToken,
+        } = await generateTokens(
+         token,id
+        
+        );
 
-            return res.status(401).json({
-                success: false,
-                message: `User not found`,
-            });
-        }
+        // Delete the old refresh token
+        await RefreshToken.destroy({
+            where: { id: storedToken.id },
+        });
 
-        const { accessToken: newAccessToken, refreshToken: newRefreshToken } =
-            await generateTokens(user);
-
-        //delete the old refresh token
-        await RefreshToken.deleteOne({ _id: storedToken._id });
-
-        res.json({
+        return res.status(200).json({
+            success: true,
             accessToken: newAccessToken,
             refreshToken: newRefreshToken,
         });
+
     } catch (e) {
-        logger.error("Refresh token error occured", e);
+        console.log("errorrr:",e)
+      //  logger.error("Refresh token error occurred", e);
         res.status(500).json({
             success: false,
             message: "Internal server error",
         });
     }
 };
+
 
 //logout
 
